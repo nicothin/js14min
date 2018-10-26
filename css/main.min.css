@@ -86,7 +86,6 @@ a:hover {
 }
 
 code {
-  background-color: #f5f5f5;
   color: #ff3860;
   font-size: .875em;
   font-weight: 400
@@ -587,9 +586,18 @@ body {
   }
 }
 
+.sides.is-active {
+  animation-name: b;
+  display: block;
+}
+
 .side {
   display: none;
   white-space: nowrap
+}
+
+.side.is-active {
+  display: block;
 }
 
 .side-title {
@@ -602,6 +610,11 @@ body {
   display: none;
   font-size: .875rem;
   padding: .25em .5em
+}
+
+.side-item.is-active {
+  animation-name: e;
+  display: block;
 }
 
 .step {
@@ -1011,10 +1024,6 @@ html.case-opera .not-opera {
   white-space: nowrap
 }
 
-.content .stabilo span {
-  background-color: #f3f5f6
-}
-
 .content .stabilo span.is-blue,
 .content .stabilo span.is-black,
 .content .stabilo span.is-green,
@@ -1026,6 +1035,16 @@ html.case-opera .not-opera {
 .highlight {
   background-color: #f3f5f6;
   border-radius: 3px
+}
+
+@keyframes b {
+  0% {
+    transform: scale(0)
+  }
+
+  to {
+    transform: scale(1)
+  }
 }
 
 @keyframes e {
