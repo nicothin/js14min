@@ -53,7 +53,7 @@
         <div class="message is-warning">
           <div class="message-body">
             Чтобы изучить JavaScript, вам необходимо включить его первым!<br>
-            <a href="https://www.enable-javascript.com/" rel="nofollow">Узнайте, как включить JavaScript в своем веб-браузере</a>.
+            <a href="https://www.enable-javascript.com/">Узнайте, как включить JavaScript в своем веб-браузере</a>.
           </div>
         </div>
         <style type="text/css">#introduction{ display: none; }</style>
@@ -1534,32 +1534,31 @@
     <h2>Перебор массива <span class="stamp is-tool">Инструменты</span></h2>
 
     <p>
-      <!--Arrays are a perfect candidate for loops, because in programming we often want to repeat the <strong>same action</strong> for <em>each</em> item of an array.-->
-      Массивы являются идеальным кандидатом для циклов, потому что в программировании мы часто хотим повторить элемент <strong>того же действия</strong> для <em>каждого</em> массива.
+      Массивы и циклы буквально созданы друг для друга! Мы часто хотим повторить <strong>одно и то же действие</strong> для <em>каждого</em> элемента массива.
     </p>
 
     <p>
-      Предположим, мы хотели вызвать окно предупреждения для <em>каждого</em> элемента массива. Хотя мы могли написать столько функций <code>alert()</code>, сколько есть элементов в массиве , это решение громоздко и неэффективное! Оно будет подвержено ошибкам и не будет масштабироваться с большими массивами.
+      Предположим, мы хотим вызвать по отдельному окну сообщения для <em>каждого</em> элемента массива. Можно написать столько функций <code>alert()</code>, сколько есть элементов в массиве, но это решение громоздкое, неэффективное, подвержено ошибкам и плохо масштабируется (особенно с большими массивами).
     </p>
 
     <p>
-      Поскольку языки программирования здесь, чтобы помочь нам упростить нашу работу, давайте выясним лучший способ. Мы уже знаем несколько вещей:
+      Языки программирования существуют, чтобы упростить нашу работу. Давайте выясним лучший способ. Мы уже знаем несколько вещей:
     </p>
 
     <ul>
       <li>
-        Мы знаем, как получить <strong>длину</strong> массива
+        как получить <strong>длину</strong> массива,
       </li>
       <li>
-        Мы знаем, как получить доступ к элементу массива с помощью <strong>индекса</strong>
+        как получить доступ к элементу массива с помощью <strong>индекса</strong>,
       </li>
       <li>
-        У нас есть доступ к переменной <code>i</code>, которая удобно увеличивает на 1
+        у нас есть доступ к переменной <code>i</code>, которая увеличивает на 1
       </li>
     </ul>
 
     <p>
-      Объединив эти данные, мы можем разработать следующий фрагмент:
+      Объединив эти данные, мы можем разработать следующий код:
     </p>
 
     <div class="snippet">
@@ -1599,11 +1598,11 @@
   В ряд!</h2>
 
   <p>
-    Один за другим элементы массива отображались в их собственном поле оповещения.
+    Один за другим элементы массива отображались в их собственных окнах сообщений.
   </p>
 
   <p>
-    Хотя использование цикла упрощает процесс прохождения каждого элемента массива, нам все равно пришлось создать блок <code>for</code> <strong>вручную</strong> и создать новую переменную <code>i</code>, чья единственная цель заключалась в том, чтобы увеличиваться после каждой итерации.
+    Хотя такой цикл упрощает процесс работы с элементом массива, нам все равно пришлось создать блок <code>for</code> <strong>вручную</strong> и создать новую переменную <code>i</code>, чья единственная цель — увеличиваться после каждой итерации.
   </p>
 
   <p>
@@ -1618,7 +1617,7 @@
     <h2>forEach цикл <span class="stamp is-tool">Инструменты</span></h2>
 
     <p>
-      У массивов на самом деле есть <strong>метод</strong> под названием <code>forEach()</code>, который позволяет выполнять задачу для <em>каждого</em> элемента массива:
+      У массивов на самом деле есть <strong>метод</strong> под названием <code>forEach()</code>, который позволяет выполнять задачу отдельно для <em>каждого</em> элемента массива:
     </p>
 
     <div class="snippet">
@@ -1667,10 +1666,10 @@
       Нет переменной <code>i</code>
     </li>
     <li>
-      Нам не нужно обращаться к <em>длине</em> массив
+      Не нужно обращаться к <em>длине</em> массив
     </li>
     <li>
-      Нам не нужно использовать <strong>индекс</strong> с <code>my_thing[i]</code> для доступа к элементу
+      Не нужно использовать <strong>индекс</strong> с <code>my_thing[i]</code> для доступа к элементу
     </li>
   </ul>
 
@@ -1679,7 +1678,7 @@
   </p>
 
   <p>
-    Если вы внимательно посмотрите, вы увидите, что <code>forEach()</code> имеет тот же синтаксис! Это <code>forEach(параметр)</code>, но где параметр является функцией, которая охватывает 3 строки.
+    Если вы внимательно посмотрите, вы увидите, что <code>forEach()</code> имеет тот же синтаксис! Это <code>forEach(параметр)</code>, но параметр является функцией, занимающей 3 строки.
   </p>
 
   <p>
@@ -1688,7 +1687,7 @@
 
   <ul>
     <li>
-      функция <code>alert()</code> (или метод window)
+      функция <code>alert()</code> (она же — как метод <code>window</code>)
     </li>
     <li>
       метод массива <code>push()</code>
@@ -1702,7 +1701,7 @@
   </ul>
 
   <p>
-    Мы знаем, как <strong>вызвать</strong> функцию,но как ее <a onclick="showStep(36);">создать</a>?
+    Мы знаем, как <strong>вызвать</strong> функцию, но как её <a onclick="showStep(36);">создать</a>?
   </p>
 </div>
 </div>
@@ -1717,15 +1716,15 @@
     </p>
 
     <p>
-      Помните комбинацию ключевых слов и скобок, которую мы использовали для <code>if/else</code> и <code>for</code>? Ну, угадайте, что: это <em>почти</em> такая же картина здесь!
+      Помните комбинацию ключевых слов и скобок, которую мы использовали для <code>if/else</code> и <code>for</code>? <em>Почти</em> такая же картина  и здесь!
     </p>
 
     <p>
-      Я говорю "почти", потому что единственная разница в том, что функции нужно <strong>имя</strong>!
+      Я говорю «почти», потому что единственная разница в том, что функции нужно <strong>имя</strong>!
     </p>
 
     <p>
-      Давайте <strong>создадим</strong> функцию с именем <code>greet()</code>, с <strong>1</strong> параметром под названием <code>name</code>, а затем сразу же вызовем ее:
+      Давайте <strong>создадим</strong> функцию с именем <code>greet()</code>, с <strong>1</strong> параметром под названием <code>name</code>, а затем сразу же вызовем ее:
     </p>
 
     <div class="snippet">
@@ -1766,7 +1765,7 @@
   Приветствую!</h2>
 
   <p>
-    Вы создали свою первую функцию! Это просто, но это может вас многому научить.
+    Вы создали свою первую функцию! Это просто, но это может вас многому научить.
   </p>
 
   <p>
@@ -1775,22 +1774,22 @@
 
   <ul>
     <li>
-      <strong>Имя</strong> функции <code>greet</code>
+      <strong>имя</strong> функции <code>greet</code>,
     </li>
     <li>
-    <strong>параметр</strong> <code>name</code>: он похож на переменную, поскольку он действует как контейнер для значения
+    <strong>параметр</strong> <code>name</code>: он похож на переменную, поскольку действует как контейнер для значения,
     </li>
     <li>
-      мы создали <strong>переменную</strong> <code>message</code> , значение которой <code>'Привет ' + name</code>
+      мы создали <strong>переменную</strong> <code>message</code>, значение которой <code>'Привет ' + name</code>,
     </li>
     <li>
-      этот знак <strong>плюс</strong> <code>+</code> <strong>объединяет</strong> (или комбинирует) две строки, чтобы сделать одну длиннее
+      этот знак <strong>плюс</strong> <code>+</code> <strong>объединяет</strong> (комбинирует) две строки, чтобы сделать из них одну,
     </li>
     <li>
-      мы <strong>вызываем</strong> функцию <code>alert()</code> и используем переменную <code>message</code>> в качестве параметра
+      мы <strong>вызываем</strong> функцию <code>alert()</code> и используем переменную <code>message</code> в качестве параметра,
     </li>
     <li>
-      после создания функции мы вызываем ее с параметром <code>'Алекс'</code>
+      после создания функции мы вызываем её с параметром <code>'Алекс'</code>.
     </li>
   </ul>
 
@@ -1825,7 +1824,7 @@
     </div>
     <div class="stab">
       <div class="stab-label">вы ввели <strong>код</strong> который выполняется только при <strong>вызове</strong> функции</div>
-      <div class="stab-code"><code class="stabilo">&nbsp;&nbsp;<span class="is-purple">var</span><span class="is-blue"> message </span><span class="is-purple">= </span><span class="is-green">'Hey there '</span><span class="is-purple"> +</span><span class="is-blue"> name</span><span class="is-black">;</span></code><br><code class="stabilo">&nbsp;&nbsp;<span class="is-blue">alert</span><span class="is-black">(</span><span class="is-blue">message</span><span class="is-black">);</span></code></div>
+      <div class="stab-code"><code class="stabilo">&nbsp;&nbsp;<span class="is-purple">var</span><span class="is-blue"> message </span><span class="is-purple">= </span><span class="is-green">'Привет '</span><span class="is-purple"> +</span><span class="is-blue"> name</span><span class="is-black">;</span></code><br><code class="stabilo">&nbsp;&nbsp;<span class="is-blue">alert</span><span class="is-black">(</span><span class="is-blue">message</span><span class="is-black">);</span></code></div>
     </div>
     <div class="stab">
       <div class="stab-label">вы <strong>закрыли</strong> фигурную скобку</div>
@@ -1838,11 +1837,11 @@
   </div>
 
   <p>
-    Если мы не вызовем функцию <code>greet()</code> в конце, ничего не произойдет! Это потому, что вызов <code>alert()</code> находится <em>внутри</em> области действия <code>greet()</code>, поэтому он не запускается, пока не будет вызвана сама родительская функция <code>greet()</code>!
+    Если мы не вызовем функцию <code>greet()</code>, ничего не произойдет. Это потому, что вызов <code>alert()</code> находится <em>внутри</em> области действия <code>greet()</code>, поэтому он не запускается, пока не будет вызвана сама родительская функция <code>greet()</code>.
   </p>
 
   <p>
-    В основном, <strong>создавая</strong> <code>greet()</code>, вы сообщаете браузеру: "<em>Эй, я создал эту новую функцию. Поэтому, если в какой-то момент я ее вызову, выполните все, что внутри!</em>".
+    <strong>Создавая</strong> <code>greet()</code>, вы сообщаете браузеру: «<em>Эй, я создал эту новую функцию. Поэтому, если в какой-то момент я ее вызову, выполни всё, что внутри!</em>».
   </p>
 
   <p>
@@ -1850,16 +1849,15 @@
   </p>
 
   <p>
-    Важно понимать, что функции-это <strong>двухэтапный</strong> процесс: сначала создание, затем вызов.
+    Важно понимать, что функции-работают <strong>в два этапа</strong>: сначала создание, затем вызов.
   </p>
 
   <p>
-    На самом деле, функция <code>alert()</code>, которую мы использовали все это время, была создана заранее. Она просто существует где-то внутри вашего браузера.
+    На самом деле, функция <code>alert()</code>, которую мы использовали всё это время, была создана заранее. Она просто существует где-то внутри вашего браузера.
   </p>
 
   <p>
-    В любом случае, мы уже <em>многое</em> обсудили за 14 минут!
-Итак, <a onclick="showStep(38);">что же будет дальше</a>?
+    В любом случае, мы уже <em>многое</em> обсудили за 14 минут! Итак, <a onclick="showStep(38);">что же будет дальше</a>?
   </p>
 </div>
 </div>
@@ -1867,12 +1865,12 @@
 <!-- 38 -->
 <div id="step38" class="step">
   <div class="content">
-    <h2>Next steps <span class="stamp is-victory">Подеба!</span></h2>
+    <h2>Что дальше <span class="stamp is-victory">Победа!</span></h2>
 
     <h3>Изучите JavaScript</h3>
 
     <p>
-      Здесь мы едва ограничились основами. Но не волнуйся! Есть <em>много</em> ресурсов, доступных в Интернете!
+      Здесь мы едва ограничились основами. Но не волнуйся! Есть <em>много</em> ресурсов, доступных в Интернете!
     </p>
 
     <p>
@@ -1881,58 +1879,39 @@
 
     <ul>
       <li>
-        <a href="https://learn.javascript.ru/" rel="nofollow">Современный учебник Javascript</a>
+        <a href="https://learn.javascript.ru/">Современный учебник Javascript</a>
       </li>
       <li>
-        <a href="https://developer.mozilla.org/ru/docs/Learn/JavaScript" rel="nofollow">Mozilla Developer Network</a>
+        <a href="https://developer.mozilla.org/ru/docs/Learn/JavaScript">Mozilla Developer Network</a>
       </li>
       <li>
-        <a href="https://github.com/azat-io/you-dont-know-js-ru" rel="nofollow">Вы не знаете JS</a>
+        <a href="https://github.com/azat-io/you-dont-know-js-ru">Вы не знаете JS</a>
       </li>
     </ul>
 
     <h3>Изучите HTML и CSS</h3>
 
     <p>
-      JavaScript-это только одна треть того, что делает веб-страницу! Вам также нужно знать <strong>HTML</strong> и <strong>CSS</strong>.
+      JavaScript-это только одна треть того, что делает веб-страницу! Вам также нужно знать <strong>HTML</strong> и <strong>CSS</strong>.
     </p>
 
     <p>
-      К счастью, я создал <strong>две бесплатные ссылки</strong> для вас, чтобы просмотреть, так что вы можете узнать все, что может предложить каждый язык!
+      Джереми Томас (автор оригинального материала) даёт две ссылки: <a href="https://htmlreference.io">HTML Reference</a> и <a href="https://cssreference.io">CSS Reference</a>, но материалы на этих проектах, видимо, не очень активно обновляются, так что лучше пользуйтесь <a href="https://webref.ru/">webref.ru</a> (прим. Н. Громов).
     </p>
 
-    <nav class="shares">
-      <a class="share is-html" href="https://htmlreference.io">
-      <img src="images/html-reference.png" alt="HTML Reference" width="64" height="64">
-      <br>
-      <em>Discover</em>
-      <strong>HTML Reference</strong>
-    </a>
-    <a class="share is-css" href="https://cssreference.io">
-    <img src="images/css-reference.png" alt="CSS Reference" width="64" height="64">
-    <br>
-    <em>Discover</em>
-    <strong>CSS Reference</strong>
-  </a>
-</nav>
-
-<h3>Изучите мой CSS фреймворк</h3>
+<h3>Изучите CSS-фреймворк автора</h3>
 
 <p>
-  Я разработал эту страницу <strong>Bulma</strong>, моим свободным открытым исходным кодом CSS framework на основе Flexbox. <a href="https://bulma.io">Проверьте это!</a>
+  Джереми Томас разработал эту страницу на <strong>Bulma</strong>, бесплатном CSS-фреймворке на основе Flexbox. <a href="https://bulma.io">Проверьте это!</a>
 </p>
 
 <p class="focus">
   <a class="share is-bulma" href="https://bulma.io/">
     <img
     src="images/bulma-modern-css-framework-flexbox.png"
-    srcset="https://jgthms.com/javascript-in-14-minutes/images/bulma-modern-css-framework-flexbox.png 1x,
-    https://jgthms.com/javascript-in-14-minutes/images/bulma-modern-css-framework-flexbox@2x.png 2x,
-    https://jgthms.com/javascript-in-14-minutes/images/bulma-modern-css-framework-flexbox@3x.png 3x"
     alt="Bulma CSS framework based on Flexbox"
     width="256"
     height="160">
-
   </a>
 </p>
 
@@ -1975,7 +1954,7 @@
       <span class="side-word is-type">Массивы</span>
     </div>
     <div id="sideBooleans" class="side-item">
-      <span class="side-word is-type">Булевые</span>
+      <span class="side-word is-type">Логические</span>
     </div>
   </div>
 </aside>
