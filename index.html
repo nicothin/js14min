@@ -31,7 +31,6 @@
         <a href="https://github.com/nicothin/js14min/tree/master">эта версия перевода на github</a>
       </p>
 
-      <!-- Case: noscript -->
       <noscript>
         <div class="message is-warning">
           <div class="message-body">
@@ -42,7 +41,6 @@
         <style type="text/css">#introduction{ display: none; }</style>
       </noscript>
 
-      <!-- Case: mobile or tablet -->
       <div class="case is-mobile is-tablet">
         <div class="message is-warning">
           <div class="message-body">
@@ -63,7 +61,8 @@
         </div>
       </div>
 
-      <!-- Case: desktop -->
+
+
       <div id="introduction" class="case is-desktop">
         <div class="content">
           <p>Кажется, вы используете это:</p>
@@ -99,7 +98,8 @@
         </div>
       </div>
 
-      <!-- Case: return -->
+
+
       <div id="return" class="message is-success">
         <div class="message-body">
           <p>
@@ -111,13 +111,16 @@
       </div>
     </header>
 
-    <!-- 01 -->
+
+
+
+
     <div id="step1" class="step">
       <div class="content">
         <h2>Консоль <span class="stamp is-tool">Инструменты</span></h2>
 
         <p>
-          В вашем браузере есть <strong>консоль разработчика</strong>, которая позволяет вам набирать JavaScript прямо на этой веб-странице.
+          В вашем браузере есть инструменты разработчика, среди которых — <strong>консоль</strong>, которая позволяет набирать JavaScript прямо на этой веб-странице.
         </p>
 
         <div class="case is-chrome not-mobile not-tablet">
@@ -170,7 +173,9 @@
 
     </div>
 
-    <!-- 02 -->
+
+
+
     <div id="step2" class="step">
       <div class="content">
 
@@ -182,219 +187,92 @@
             </g>
           </svg>
         </div>
-      Отличная работа!</h2>
+        Отличная работа!</h2>
 
 
-      <p>Вы только что использовали <code>alert()</code> — встроенную <strong>функцию JavaScript</strong>, которая поставляется с каждым браузером.</p>
+        <p>Вы только что использовали <code>alert()</code> — встроенную <strong>функцию JavaScript</strong>, которая поставляется с каждым браузером.</p>
 
-      <p> Но <a onclick="showStep(3);">что именно вы сделали</a>? </p> </div>
-    </div>
-  </div>
-
-  <!-- 03 -->
-  <div id="step3" class="step">
-    <div class="content">
-      <h2>Функции <span class="stamp is-concept">Концепция</span></h2>
-      <p>Вы <strong>вызвали</strong> <em>функцию</em> <code>alert()</code> <em>с параметром</em> <code>'Привет мир!'</code></p>
-
-      <p>То есть, вы сделали 4 вещи:</p>
-
-      <div class="stabs">
-        <div class="stab">
-          <div class="stab-label">набрали <strong>имя</strong> функции</div>
-          <div class="stab-code"><code class="stabilo"><span class="is-blue">alert</span>('Привет мир!')</code></div>
-        </div>
-        <div class="stab">
-          <div class="stab-label">открыли <strong>скобку</strong></div>
-          <div class="stab-code"><code class="stabilo">alert<span class="is-black">(</span>'Привет мир!')</code></div>
-        </div>
-        <div class="stab">
-          <div class="stab-label">набрали <strong>параметр</strong></div>
-          <div class="stab-code"><code class="stabilo">alert(<span class="is-green">'Привет мир!'</span>)</code></div>
-        </div>
-        <div class="stab">
-          <div class="stab-label"><strong>закрыли</strong> скобку</div>
-          <div class="stab-code"><code class="stabilo">alert('Привет мир!'<span class="is-black">)</span></code></div>
-        </div>
+        <p> Но <a onclick="showStep(3);">что именно вы сделали</a>? </p> </div>
       </div>
-
-      <p>
-        Иногда параметр отсутствует. <br>
-        Иногда есть несколько параметров. <br>
-        Большинство параметров необходимы, но некоторые могут быть необязательными.
-      </p>
-
-      <p>В этом случае для <code>alert()</code> требуется только один параметр. </p>
-
-      <p>Но что такое <a onclick="showStep(4);">тип параметра </a>? </p>
-    </div>
-  </div>
-
-  <!-- 04 -->
-  <div id="step4" class="step">
-    <div class="content">
-      <h2>Строки <span class="stamp is-type">Типы</span></h2>
-
-      <p> Когда вы работаете с текстом, вы используете <strong>строки</strong>, которые представляют собой последовательность  <em>символов</em>. В нашем случае мы использовали серию <strong>11 символов</strong>: <code>Привет мир!</code>. То есть, строчные и прописные буквы, пробел и восклицательный знак. </p>
-
-      <p> Чтобы определить, где строка <em>начинается</em> и где она <em>заканчивается</em>, вам нужно обернуть ее в <strong>кавычки</strong> (одиночные <code>'</code> или двойные <code>"</code>). </p>
-
-      <p>Когда вы определили строку <code>'Привет мир!'</code>: </p>
-
-      <ol>
-        <li> вы набрали одну <strong>кавычку</strong></li>
-        <li> вы набрали <strong>11 символов</strong></li>
-        <li> вы набрали еще одну <strong>кавычку</strong></li>
-      </ol>
-
-      <p>Но что если вы хотите иметь дело с <a onclick="showStep(5);">цифрами</a>?</p>
-    </div>
-  </div>
-
-  <!-- 05 -->
-  <div id="step5" class="step">
-    <div class="content">
-      <h2>Числа <span class="stamp is-type">Типы</span></h2>
-
-      <p>Как и любой другой язык программирования, JavaScript может обрабатывать <strong>цифры</strong>.</p>
-
-      <p>Эти числа могут быть большими или малыми, с десятичными знаками или без них, объединенными посредством числовых операций...</p>
-
-      <p>Введите или вставьте следующий фрагмент в консоль:</p>
     </div>
 
-    <div class="snippet">
-      <div class="snippet-contents">
-        <pre class="highlight"><code>alert(9+5 * 3)</code></pre>
+
+
+    <div id="step3" class="step">
+      <div class="content">
+        <h2>Функции <span class="stamp is-concept">Концепция</span></h2>
+        <p>Вы <strong>вызвали</strong> <em>функцию</em> <code>alert()</code> <em>с параметром</em> <code>'Привет мир!'</code></p>
+
+        <p>То есть, вы сделали 4 вещи:</p>
+
+        <div class="stabs">
+          <div class="stab">
+            <div class="stab-label">набрали <strong>имя</strong> функции</div>
+            <div class="stab-code"><code class="stabilo"><span class="is-blue">alert</span>('Привет мир!')</code></div>
+          </div>
+          <div class="stab">
+            <div class="stab-label">открыли <strong>скобку</strong></div>
+            <div class="stab-code"><code class="stabilo">alert<span class="is-black">(</span>'Привет мир!')</code></div>
+          </div>
+          <div class="stab">
+            <div class="stab-label">набрали <strong>параметр</strong></div>
+            <div class="stab-code"><code class="stabilo">alert(<span class="is-green">'Привет мир!'</span>)</code></div>
+          </div>
+          <div class="stab">
+            <div class="stab-label"><strong>закрыли</strong> скобку</div>
+            <div class="stab-code"><code class="stabilo">alert('Привет мир!'<span class="is-black">)</span></code></div>
+          </div>
+        </div>
+
+        <p>
+          Иногда параметр отсутствует, иногда есть несколько параметров (перечисляются через запятую). <br>
+          Некоторые параметры необходимы, другие могут быть необязательными.
+        </p>
+
+        <p>В этом случае для <code>alert()</code> требуется только один параметр. </p>
+
+        <p>Но что такое <a onclick="showStep(4);">тип параметра</a>? </p>
       </div>
-
-      <a class="snippet-copy not-mobile not-tablet">
-        Копировать
-      </a>
-
     </div>
 
-  </div>
 
-  <!-- 06 -->
-  <div id="step6" class="step">
-    <div class="content">
 
-      <h2 class="gj"><div class="check">
-        <div class="check-circle"></div>
-        <svg class="check-svg" width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-          <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-            <polyline stroke="#65B280" stroke-width="4" points="11 19 18 26 29 14"></polyline>
-          </g>
-        </svg>
+    <div id="step4" class="step">
+      <div class="content">
+        <h2>Строки <span class="stamp is-type">Типы</span></h2>
+
+        <p>Когда вы работаете с текстом, вы используете <strong>строки</strong>, которые представляют собой последовательность <em>символов</em>. В нашем случае мы использовали серию <strong>11 символов</strong>: <code>Привет мир!</code>. То есть, строчные и прописные буквы, пробел и восклицательный знак. </p>
+
+        <p>Чтобы определить, где строка <em>начинается</em> и где она <em>заканчивается</em>, вам нужно обернуть ее в <strong>кавычки</strong> (одиночные <code>'</code> или двойные <code>"</code>). </p>
+
+        <p>Когда вы определили строку <code>'Привет мир!'</code>: </p>
+
+        <ol>
+          <li> вы набрали одну <strong>кавычку</strong></li>
+          <li> вы набрали <strong>11 символов</strong></li>
+          <li> вы набрали еще одну <strong>кавычку</strong></li>
+        </ol>
+
+        <p>Но что если вы хотите иметь дело с <a onclick="showStep(5);">цифрами</a>?</p>
       </div>
-    Отлично!</h2>
+    </div>
 
-    <p>Обратите внимание на несколько вещей:</p>
 
-    <ul>
-      <li>вы используете <strong>операторы</strong> <code>+</code> и <code>*</code>,</li>
-      <li>соблюдается <strong>математический порядок</strong>: сначала вычисляется <code>5 * 3</code>, затем <code>9 + 15</code>,</li>
-      <li><strong>пробелы</strong> вокруг символа <code>*</code> не влияют на вывод, они здесь только чтобы помочь нам <em>читать</em> код.</li>
-    </ul>
 
-    <p>Вы можете найти числа во <a onclick="showStep(7);">многих местах</a>.</p>
-  </div>
-</div>
+    <div id="step5" class="step">
+      <div class="content">
+        <h2>Числа <span class="stamp is-type">Типы</span></h2>
 
-<!-- 07 -->
-<div id="step7" class="step">
-  <div class="content">
-    <h2>Размеры браузера <span class="stamp is-info">Инфо</span></h2>
-    <p>Цифры повсюду! Особенно в браузере.</p>
+        <p>Как и любой другой язык программирования, JavaScript может обрабатывать <strong>цифры</strong>.</p>
 
-    <p>Например, ваше текущее окно браузера имеет определенную <strong>ширину</strong>, которую вы можете получить с помощью JavaScript.</p>
+        <p>Эти числа могут быть большими или малыми, с десятичными знаками или без них, объединенными посредством числовых операций...</p>
 
-    <p>Введите следующее:</p>
-
-    <div class="snippet">
-      <div class="snippet-contents">
-        <pre class="highlight"><code>alert(window.innerWidth)</code></pre>
-
+        <p>Введите или вставьте следующий фрагмент в консоль:</p>
       </div>
-
-      <a class="snippet-copy not-mobile not-tablet">
-        Копировать
-      </a>
-
-    </div>
-
-  </div>
-</div>
-
-<!-- 08 -->
-<div id="step8" class="step">
-  <div class="content">
-
-    <h2 class="gj"><div class="check">
-      <div class="check-circle"></div>
-      <svg class="check-svg" width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-          <polyline stroke="#65B280" stroke-width="4" points="11 19 18 26 29 14"></polyline>
-        </g>
-      </svg>
-    </div>
-  Замечательно!</h2>
-
-  <p>
-    Это означает, что окно вашего браузера сейчас <strong id="browserWidth">0</strong> пикселей в ширину.
-  </p>
-
-  <p>
-    Как вы уже догадались, существует и <code>window.innerHeight</code>, и <code>window.scrollY</code> (даёт текущую позицию прокрутки).
-  </p>
-
-  <p>Но что такое <code>window</code> <a onclick="showStep(9);">на самом деле</a>?</p>
-</div>
-</div>
-
-<!-- 09 -->
-<div id="step9" class="step">
-  <div class="content">
-    <h2>Объекты <span class="stamp is-type">Типы</span></h2>
-
-    <p>
-      <code>window</code> — это JavaScript <strong>объект</strong>.
-    </p>
-    <p>
-      <code>innerWidth</code> — это <strong>свойство</strong> объекта <code>window</code>.
-      <br>
-      Получая доступ к этому свойству, вы использовали точку <code>.</Code>, чтобы указать, что вам нужен <code>innerWidth</code>, который существует <em>внутри</em> объекта <code>window</code>
-    </p>
-
-    <p>Объект JavaScript представляет собой <strong>тип данных</strong>, который содержит другие типы данных.</p>
-    <p>Например, <code>window</code> также содержит: </p>
-
-      <ul>
-        <li><code>window.origin</code>, который является строкой</li>
-        <li><code>window.scrollY</code>, который является числом </li>
-        <li><code>window.location</code>, который является объектом</li>
-      </ul>
-
-      <p>Если <code>window</code> — это объект, содержащий <code>location</code>, который является другим объектом, это означает, что <a onclick="showStep(10);">JavaScript поддерживает</a>...</p>
-    </div>
-  </div>
-
-  <!-- 10 -->
-  <div id="step10" class="step">
-    <div class="content">
-      <h2>Вложенность <span class="stamp is-info">Инфо</span></h2>
-
-      <p>Свойством объекта может быть другой объект.</p>
-
-      <p>Так как <code>window.location</code> тоже объект, он имеет свои собственные свойства. Чтобы получить доступ к этим свойствам, просто добавьте еще одну точку <code>.</code> и имя свойства.</p>
-
-      <p>Например, свойство <code>href</code> существует:</p>
 
       <div class="snippet">
         <div class="snippet-contents">
-          <pre class="highlight"><code>alert(window.location.href)</code></pre>
-
+          <pre class="highlight"><code>alert(9+5 * 3)</code></pre>
         </div>
 
         <a class="snippet-copy not-mobile not-tablet">
@@ -404,1444 +282,1606 @@
       </div>
 
     </div>
-  </div>
-
-  <!-- 11 -->
-  <div id="step11" class="step">
-    <div class="content">
-
-      <h2 class="gj"><div class="check">
-        <div class="check-circle"></div>
-        <svg class="check-svg" width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-          <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-            <polyline stroke="#65B280" stroke-width="4" points="11 19 18 26 29 14"></polyline>
-          </g>
-        </svg>
-      </div>
-    Потрясающе!</h2>
-
-    <p>Вы только что получили <strong>полный URL</strong> этой веб-страницы. Это происходит потому, что:</p>
-
-    <ul>
-      <li><code>window</code> является объектом</li>
-      <li><code>location</code> является объектом</li>
-      <li><code>href</code> является строкой</li>
-    </ul>
-
-    <p>
-      Нет предела тому, насколько глубоко могут быть вложены объекты.
-      <br>
-      Нет ограничений на количество свойств, которые может иметь объект.
-    </p>
-
-    <p>
-      Как мы видели, свойства объекта могут быть любого типа: строки, числа, объекты и даже функции. В последнем случае это <a onclick="showStep(12);">называется...</a>
-    </p>
-  </div>
-</div>
-
-<!-- 12 -->
-<div id="step12" class="step">
-  <div class="content">
-    <h2>Методы <span class="stamp is-info">Инфо</span></h2>
-
-    <p>Если свойство <strong>объекта</strong> является <strong>функцией</strong>, то оно называется <strong>методом</strong>.</p>
-
-    <p>На самом деле, функция <code>alert()</code>, которую мы использовали до сих пор, — это метод объекта <code>window</code>:</p>
-
-    <div class="snippet">
-      <div class="snippet-contents">
-        <pre class="highlight"><code>window.alert('О мой бог')</code></pre>
-
-      </div>
-
-      <a class="snippet-copy not-mobile not-tablet">
-        Копировать
-      </a>
-
-    </div>
 
 
 
-  </div>
-</div>
+    <div id="step6" class="step">
+      <div class="content">
 
-<!-- 13 -->
-<div id="step13" class="step">
-  <div class="content">
+        <h2 class="gj"><div class="check">
+          <div class="check-circle"></div>
+          <svg class="check-svg" width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+              <polyline stroke="#65B280" stroke-width="4" points="11 19 18 26 29 14"></polyline>
+            </g>
+          </svg>
+        </div>
+        Отлично!</h2>
 
-    <h2 class="gj"><div class="check">
-      <div class="check-circle"></div>
-      <svg class="check-svg" width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-          <polyline stroke="#65B280" stroke-width="4" points="11 19 18 26 29 14"></polyline>
-        </g>
-      </svg>
-    </div>
-  Божечки, действительно!</h2>
+        <p>Обратите внимание на несколько вещей:</p>
 
-  <p>
-    Поскольку <code>window</code> является объектом верхнего уровня в браузере, вы можете напрямую обращаться ко всем его свойствам и методам.
-  </p>
+        <ul>
+          <li>вы используете <strong>операторы</strong> <code>+</code> и <code>*</code>,</li>
+          <li>соблюдается <strong>математический порядок</strong>: сначала вычисляется <code>5 * 3</code>, затем <code>9 + 15</code>,</li>
+          <li><strong>пробелы</strong> вокруг символа <code>*</code> не влияют на вывод, они здесь только чтобы помочь нам <em>читать</em> код.</li>
+        </ul>
 
-  <p>
-    Вот почему <code>location.href</code> совпадает с <code>window.location.href</code>.
-  </p>
-
-  <p>
-    Или почему <code>alert()</code> эквивалентен <code>window.alert()</code>.
-  </p>
-
-  <p>
-    Объекты полезны для группировки нескольких свойств под одним именем (и уровнем <strong>иерархии</strong>). Это похоже на дерево, где каждая ветка может иметь другие более мелкие ветви.
-  </p>
-
-  <p>
-    Но что, если вам нужен только <a onclick="showStep(14);">список элементов</a> ...
-  </p>
-
-</div>
-</div>
-
-<!-- 14 -->
-<div id="step14" class="step">
-  <div class="content">
-    <h2>Массивы <span class="stamp is-type">Типы</span></h2>
-
-    <p><strong>Массив</strong> JavaScript — это тип данных, который может содержать несколько значений, как если бы они были в списке.</p>
-
-    <p>Давайте передадим массив <strong>3 строки</strong> в функцию <code>alert()</code>:</p>
-
-    <div class="snippet">
-      <div class="snippet-contents">
-        <pre class="highlight"><code>alert(['Как', 'ваши', 'дела'])</code></pre>
-      </div>
-
-      <a class="snippet-copy not-mobile not-tablet">
-        Копировать
-      </a>
-
-    </div>
-
-  </div>
-</div>
-
-<!-- 15 -->
-<div id="step15" class="step">
-  <div class="content">
-
-    <h2 class="gj"><div class="check">
-      <div class="check-circle"></div>
-      <svg class="check-svg" width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-          <polyline stroke="#65B280" stroke-width="4" points="11 19 18 26 29 14"></polyline>
-        </g>
-      </svg>
-    </div>
-  В точку!</h2>
-
-  <p>
-    Вы уже знаете синтаксис для вызова функции <code>alert</code>: <code>alert(параметр)</code>.
-  </p>
-
-  <p>
-    В этом случае параметр представляет собой массив с тремя элементами, которые вы определили следующим образом:
-  </p>
-
-  <div class="stabs">
-    <div class="stab">
-      <div class="stab-label">открыли <strong>квадратную скобку</strong></div>
-      <div class="stab-code"><code class="stabilo"><span class="is-black">[</span>'Как', 'ваши', 'дела']</code></div>
-    </div>
-    <div class="stab">
-      <div class="stab-label">набрали <strong>первый элемент</strong> массива (строку)</div>
-      <div class="stab-code"><code class="stabilo">[<span class="is-green">'Как'</span>, 'ваши', 'дела']</code></div>
-    </div>
-    <div class="stab">
-      <div class="stab-label">набрали <strong>запятую</strong> для разделения элементов</div>
-      <div class="stab-code"><code class="stabilo">['Как'<span class="is-black">,</span> 'ваши', 'дела']</code></div>
-    </div>
-    <div class="stab">
-      <div class="stab-label">добавили в список <strong>два других элемента</strong>.</div>
-      <div class="stab-code"><code class="stabilo">['Как', <span class="is-green">'ваши'</span><span class="is-black">, </span><span class="is-green">'дела'</span>]</code></div>
-    </div>
-    <div class="stab">
-      <div class="stab-label"><strong>закрыли</strong> квадратную скобку</div>
-      <div class="stab-code"><code class="stabilo">['Как', 'ваши', 'дела'<span class="is-black">]</span></code></div>
-    </div>
-  </div>
-
-  <p>
-    Массив может содержать <strong>любые</strong> значения: строки, числа, объекты, другие массивы...
-  </p>
-
-  <p>
-    Попробуйте этот фрагмент:
-  </p>
-
-  <div class="snippet">
-    <div class="snippet-contents">
-      <pre class="highlight"><code>alert([2 + 5, 'самурай', true])</code></pre>
-    </div>
-
-    <a class="snippet-copy not-mobile not-tablet">
-      Копировать
-    </a>
-
-  </div>
-
-</div>
-</div>
-
-<!-- 16 -->
-<div id="step16" class="step">
-  <div class="content">
-
-    <h2 class="gj"><div class="check">
-      <div class="check-circle"></div>
-      <svg class="check-svg" width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-          <polyline stroke="#65B280" stroke-width="4" points="11 19 18 26 29 14"></polyline>
-        </g>
-      </svg>
-    </div>
-  Правда!</h2>
-
-  <p>
-    Первый элемент <code>2 + 5</code> — это число, а второй <code>'самурай'</code> — строка.
-  </p>
-
-  <p>
-    Как насчет <strong>третьего параметра</strong>? Это не строка, потому что она не заключена в кавычки, и это не число.
-  </p>
-  <p>
-    Так <a onclick="showStep(17);">что же это</a>?
-  </p>
-</div>
-</div>
-
-<!-- 17 -->
-<div id="step17" class="step">
-  <div class="content">
-    <h2>Логический тип (boolean)<span class="stamp is-type">Типы</span></h2>
-
-    <p>В то время как строки и числа имеют бесконечное количество <em>возможных</em> значений, <strong>логический</strong> тип может быть либо <code>true</code>, либо <code>false</code>.</p>
-
-    <p>
-      Объединение функции <code>alert()</code> и 3-го элемента массива в <em>одной</em> строке делает наш код менее читаемым.
-    </p>
-
-    <p>
-      Что, если бы мы могли разбить их, переместив массив <a onclick="showStep(18);">на отдельную строку</a>?
-    </p>
-  </div>
-</div>
-
-<!-- 18 -->
-<div id="step18" class="step">
-  <div class="content">
-    <h2>Переменные <span class="stamp is-concept">Концепция</span></h2>
-
-    <p>
-      Мы можем записать массив в <strong>переменную</strong>.
-    </p>
-
-    <p>
-      Переменная — это <strong>контейнер</strong>, который хранит определенное <strong>значение</strong>. Она имеет <strong>имя</strong> (поэтому вы можете идентифицировать и повторно использовать её), и она имеет <strong>значение</strong> (так что вы можете изменить её позже).
-    </p>
-
-    <div class="snippet">
-      <div class="snippet-contents">
-        <pre class="highlight"><code>var my_things = [2 + 5, 'самурай', true];</code></pre>
-      </div>
-
-    </div>
-
-    <ul>
-      <li>
-        <code>my_things</code> — это <strong>имя</strong> переменной
-      </li>
-      <li>
-        <code>[2 + 5, 'самурай', true]</code> — это <strong>значение</strong> переменной
-      </li>
-    </ul>
-
-    <p>
-      Вот пояснение:
-    </p>
-
-    <div class="stabs is-vertical">
-      <div class="stab">
-        <div class="stab-label">вы набрали <strong>ключевое слово</strong> <code>var</code></div>
-        <div class="stab-code"><code class="stabilo"><span class="is-purple">var</span> my_things = [2 + 5, 'самурай', true];</code></div>
-      </div>
-      <div class="stab">
-        <div class="stab-label">вы набрали <strong>имя</strong> переменной</div>
-        <div class="stab-code"><code class="stabilo">var <span class="is-blue">my_things</span> = [2 + 5, 'самурай', true];</code></div>
-      </div>
-      <div class="stab">
-        <div class="stab-label">вы набрали оператор <strong>присваивания</strong> <code>=</code></div>
-        <div class="stab-code"><code class="stabilo">var my_things <span class="is-purple">=</span> [2 + 5, 'самурай', true];</code></div>
-      </div>
-      <div class="stab">
-        <div class="stab-label">вы набрали <strong>массив</strong></div>
-        <div class="stab-code"><code class="stabilo">var my_things = <span class="is-black">[</span><span class="is-red">2</span><span class="is-purple"> + </span><span class="is-red">5</span><span class="is-black">, </span><span class="is-green">'самурай'</span><span class="is-black">, </span><span class="is-purple">true</span><span class="is-black">]</span>;</code></div>
-      </div>
-      <div class="stab">
-        <div class="stab-label">вы набрали <strong>точку с запятой</strong>, чтобы закончить утверждение</div>
-        <div class="stab-code"><code class="stabilo">var my_things = [2 + 5, 'самурай', true]<span class="is-black">;</span></code></div>
+        <p>Вы можете найти числа во <a onclick="showStep(7);">многих местах</a>.</p>
       </div>
     </div>
 
-    <p>
-      Это означает, что <code>my_things</code> равен <code>[2 + 5, 'самурай', true]</code>.
-    </p>
 
-    <p>
-      Теперь вернёмся к функции <code>alert</code>.
-    </p>
 
-    <p>
-      Поскольку теперь мы имеем <em>два действия</em>, нам нужно разделить их <strong>точкой с запятой</strong> <code>;</code>, чтобы знать, где заканчивается одно и начинается другое.
-    </p>
+    <div id="step7" class="step">
+      <div class="content">
+        <h2>Размеры браузера <span class="stamp is-info">Инфо</span></h2>
+        <p>Цифры повсюду! Особенно в браузере.</p>
 
-    <div class="snippet">
-      <div class="snippet-contents">
-        <pre class="highlight"><code>var my_things = [2 + 5, 'самурай', true];
-alert(my_things);</code></pre>
+        <p>Например, ваше текущее окно браузера имеет определенную <strong>ширину</strong>, которую вы можете получить с помощью JavaScript.</p>
+
+        <p>Введите следующее:</p>
+
+        <div class="snippet">
+          <div class="snippet-contents">
+            <pre class="highlight"><code>alert(window.innerWidth)</code></pre>
+
+          </div>
+
+          <a class="snippet-copy not-mobile not-tablet">
+            Копировать
+          </a>
+
+        </div>
+
+      </div>
+    </div>
+
+
+
+    <div id="step8" class="step">
+      <div class="content">
+
+        <h2 class="gj"><div class="check">
+          <div class="check-circle"></div>
+          <svg class="check-svg" width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+              <polyline stroke="#65B280" stroke-width="4" points="11 19 18 26 29 14"></polyline>
+            </g>
+          </svg>
+        </div>
+      Замечательно!</h2>
+
+      <p>
+        Это означает, что окно вашего браузера сейчас <strong id="browserWidth">0</strong> пикселей в ширину.
+      </p>
+
+      <p>
+        Как вы уже догадались, существует и <code>window.innerHeight</code>, и <code>window.scrollY</code> (даёт текущую позицию прокрутки).
+      </p>
+
+      <p>Но что такое <code>window</code> <a onclick="showStep(9);">на самом деле</a>?</p>
+    </div>
+    </div>
+
+
+
+    <div id="step9" class="step">
+      <div class="content">
+        <h2>Объекты <span class="stamp is-type">Типы</span></h2>
+
+        <p>
+          <code>window</code> — это JavaScript <strong>объект</strong>.
+        </p>
+        <p>
+          <code>innerWidth</code> — это <strong>свойство</strong> объекта <code>window</code>.
+          <br>
+          Получая доступ к этому свойству, вы использовали точку <code>.</Code>, чтобы указать, что вам нужен <code>innerWidth</code>, который существует <em>внутри</em> объекта <code>window</code>
+        </p>
+
+        <p>Объект JavaScript представляет собой <strong>тип данных</strong>, который содержит другие типы данных.</p>
+        <p>Например, <code>window</code> также содержит: </p>
+
+          <ul>
+            <li><code>window.origin</code>, который является строкой</li>
+            <li><code>window.scrollY</code>, который является числом </li>
+            <li><code>window.location</code>, который является объектом</li>
+          </ul>
+
+          <p>Если <code>window</code> — это объект, содержащий <code>location</code>, который является другим объектом, это означает, что <a onclick="showStep(10);">JavaScript поддерживает</a>...</p>
+        </div>
+      </div>
+
+
+
+      <div id="step10" class="step">
+        <div class="content">
+          <h2>Вложенность <span class="stamp is-info">Инфо</span></h2>
+
+          <p>Свойством объекта может быть другой объект.</p>
+
+          <p>Так как <code>window.location</code> тоже объект, он имеет свои собственные свойства. Чтобы получить доступ к этим свойствам, просто добавьте еще одну точку <code>.</code> и имя свойства.</p>
+
+          <p>Например, свойство <code>href</code> существует:</p>
+
+          <div class="snippet">
+            <div class="snippet-contents">
+              <pre class="highlight"><code>alert(window.location.href)</code></pre>
+
+            </div>
+
+            <a class="snippet-copy not-mobile not-tablet">
+              Копировать
+            </a>
+
+          </div>
+
+        </div>
+      </div>
+
+
+
+      <div id="step11" class="step">
+        <div class="content">
+
+          <h2 class="gj"><div class="check">
+            <div class="check-circle"></div>
+            <svg class="check-svg" width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <polyline stroke="#65B280" stroke-width="4" points="11 19 18 26 29 14"></polyline>
+              </g>
+            </svg>
+          </div>
+        Потрясающе!</h2>
+
+        <p>Вы только что получили <strong>полный URL</strong> этой веб-страницы. Это происходит потому, что:</p>
+
+        <ul>
+          <li><code>window</code> является объектом</li>
+          <li><code>location</code> является объектом</li>
+          <li><code>href</code> является строкой</li>
+        </ul>
+
+        <p>
+          Нет предела тому, насколько глубоко могут быть вложены объекты.
+          <br>
+          Нет ограничений на количество свойств, которые может иметь объект.
+        </p>
+
+        <p>
+          Как мы видели, свойства объекта могут быть любого типа: строки, числа, объекты и даже функции. В последнем случае это <a onclick="showStep(12);">называется...</a>
+        </p>
+      </div>
+    </div>
+
+
+
+    <div id="step12" class="step">
+      <div class="content">
+        <h2>Методы <span class="stamp is-info">Инфо</span></h2>
+
+        <p>Если свойство <strong>объекта</strong> является <strong>функцией</strong>, то оно называется <strong>методом</strong>.</p>
+
+        <p>На самом деле, функция <code>alert()</code>, которую мы использовали до сих пор, — это метод объекта <code>window</code>:</p>
+
+        <div class="snippet">
+          <div class="snippet-contents">
+            <pre class="highlight"><code>window.alert('О мой бог')</code></pre>
+
+          </div>
+
+          <a class="snippet-copy not-mobile not-tablet">
+            Копировать
+          </a>
+
+        </div>
+
+
+
+      </div>
+    </div>
+
+
+
+    <div id="step13" class="step">
+      <div class="content">
+
+        <h2 class="gj"><div class="check">
+          <div class="check-circle"></div>
+          <svg class="check-svg" width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+              <polyline stroke="#65B280" stroke-width="4" points="11 19 18 26 29 14"></polyline>
+            </g>
+          </svg>
+        </div>
+        Божечки, действительно!</h2>
+
+        <p>
+          Поскольку <code>window</code> является объектом верхнего уровня в браузере, вы можете напрямую обращаться ко всем его свойствам и методам.
+        </p>
+
+        <p>
+          Вот почему <code>location.href</code> совпадает с <code>window.location.href</code>.
+        </p>
+
+        <p>
+          Или почему <code>alert()</code> эквивалентен <code>window.alert()</code>.
+        </p>
+
+        <p>
+          Объекты полезны для группировки нескольких свойств под одним именем (и уровнем <strong>иерархии</strong>). Это похоже на дерево, где каждая ветка может иметь другие более мелкие ветви.
+        </p>
+
+        <p>
+          Но что, если вам нужен только <a onclick="showStep(14);">список элементов</a> ...
+        </p>
+
+      </div>
+    </div>
+
+
+
+    <div id="step14" class="step">
+      <div class="content">
+        <h2>Массивы <span class="stamp is-type">Типы</span></h2>
+
+        <p><strong>Массив</strong> JavaScript — это тип данных, который может содержать несколько значений, как если бы они были в списке.</p>
+
+        <p>Давайте передадим массив <strong>3 строки</strong> в функцию <code>alert()</code>:</p>
+
+        <div class="snippet">
+          <div class="snippet-contents">
+            <pre class="highlight"><code>alert(['Как', 'ваши', 'дела'])</code></pre>
+          </div>
+
+          <a class="snippet-copy not-mobile not-tablet">
+            Копировать
+          </a>
+
+        </div>
+
+      </div>
+    </div>
+
+
+
+    <div id="step15" class="step">
+      <div class="content">
+
+        <h2 class="gj"><div class="check">
+          <div class="check-circle"></div>
+          <svg class="check-svg" width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+              <polyline stroke="#65B280" stroke-width="4" points="11 19 18 26 29 14"></polyline>
+            </g>
+          </svg>
+        </div>
+        В точку!</h2>
+
+        <p>
+          Вы уже знаете синтаксис для вызова функции <code>alert</code>: <code>alert(параметр)</code>.
+        </p>
+
+        <p>
+          В этом случае параметр представляет собой массив с тремя элементами, которые вы определили следующим образом:
+        </p>
+
+        <div class="stabs">
+          <div class="stab">
+            <div class="stab-label">открыли <strong>квадратную скобку</strong></div>
+            <div class="stab-code"><code class="stabilo"><span class="is-black">[</span>'Как', 'ваши', 'дела']</code></div>
+          </div>
+          <div class="stab">
+            <div class="stab-label">набрали <strong>первый элемент</strong> массива (строку)</div>
+            <div class="stab-code"><code class="stabilo">[<span class="is-green">'Как'</span>, 'ваши', 'дела']</code></div>
+          </div>
+          <div class="stab">
+            <div class="stab-label">набрали <strong>запятую</strong> для разделения элементов</div>
+            <div class="stab-code"><code class="stabilo">['Как'<span class="is-black">,</span> 'ваши', 'дела']</code></div>
+          </div>
+          <div class="stab">
+            <div class="stab-label">добавили в список <strong>два других элемента</strong>.</div>
+            <div class="stab-code"><code class="stabilo">['Как', <span class="is-green">'ваши'</span><span class="is-black">, </span><span class="is-green">'дела'</span>]</code></div>
+          </div>
+          <div class="stab">
+            <div class="stab-label"><strong>закрыли</strong> квадратную скобку</div>
+            <div class="stab-code"><code class="stabilo">['Как', 'ваши', 'дела'<span class="is-black">]</span></code></div>
+          </div>
+        </div>
+
+        <p>
+          Массив может содержать <strong>любые</strong> значения: строки, числа, объекты, другие массивы...
+        </p>
+
+        <p>
+          Попробуйте этот фрагмент:
+        </p>
+
+        <div class="snippet">
+          <div class="snippet-contents">
+            <pre class="highlight"><code>alert([2 + 5, 'самурай', true])</code></pre>
+          </div>
+
+          <a class="snippet-copy not-mobile not-tablet">
+            Копировать
+          </a>
+
+        </div>
+
+      </div>
+    </div>
+
+
+
+    <div id="step16" class="step">
+      <div class="content">
+
+        <h2 class="gj"><div class="check">
+          <div class="check-circle"></div>
+          <svg class="check-svg" width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+              <polyline stroke="#65B280" stroke-width="4" points="11 19 18 26 29 14"></polyline>
+            </g>
+          </svg>
+        </div>
+        Правда!</h2>
+
+        <p>
+          Первый элемент <code>2 + 5</code> — это число, а второй <code>'самурай'</code> — строка.
+        </p>
+
+        <p>
+          Как насчет <strong>третьего параметра</strong>? Это не строка, потому что она не заключена в кавычки, и это не число.
+        </p>
+        <p>
+          Так <a onclick="showStep(17);">что же это</a>?
+        </p>
+      </div>
+    </div>
+
+
+
+    <div id="step17" class="step">
+      <div class="content">
+        <h2>Логический тип (boolean)<span class="stamp is-type">Типы</span></h2>
+
+        <p>В то время как строки и числа имеют бесконечное количество <em>возможных</em> значений, <strong>логический</strong> тип может быть либо <code>true</code>, либо <code>false</code>.</p>
+
+        <p>
+          Объединение функции <code>alert()</code> и 3-го элемента массива в <em>одной</em> строке делает наш код менее читаемым.
+        </p>
+
+        <p>
+          Что, если бы мы могли разбить их, переместив массив <a onclick="showStep(18);">на отдельную строку</a>?
+        </p>
+      </div>
+    </div>
+
+
+
+    <div id="step18" class="step">
+      <div class="content">
+        <h2>Переменные <span class="stamp is-concept">Концепция</span></h2>
+
+        <p>
+          Мы можем записать массив в <strong>переменную</strong>.
+        </p>
+
+        <p>
+          Переменная — это <strong>контейнер</strong>, который хранит определенное <strong>значение</strong>. Она имеет <strong>имя</strong> (поэтому вы можете идентифицировать и повторно использовать её), и она имеет <strong>значение</strong> (так что вы можете изменить её позже).
+        </p>
+
+        <div class="snippet">
+          <div class="snippet-contents">
+            <pre class="highlight"><code>var my_things = [2 + 5, 'самурай', true];</code></pre>
+          </div>
+
+        </div>
+
+        <ul>
+          <li>
+            <code>my_things</code> — это <strong>имя</strong> переменной
+          </li>
+          <li>
+            <code>[2 + 5, 'самурай', true]</code> — это <strong>значение</strong> переменной
+          </li>
+        </ul>
+
+        <p>
+          Вот пояснение:
+        </p>
+
+        <div class="stabs is-vertical">
+          <div class="stab">
+            <div class="stab-label">вы набрали <strong>ключевое слово</strong> <code>var</code></div>
+            <div class="stab-code"><code class="stabilo"><span class="is-purple">var</span> my_things = [2 + 5, 'самурай', true];</code></div>
+          </div>
+          <div class="stab">
+            <div class="stab-label">вы набрали <strong>имя</strong> переменной</div>
+            <div class="stab-code"><code class="stabilo">var <span class="is-blue">my_things</span> = [2 + 5, 'самурай', true];</code></div>
+          </div>
+          <div class="stab">
+            <div class="stab-label">вы набрали оператор <strong>присваивания</strong> <code>=</code></div>
+            <div class="stab-code"><code class="stabilo">var my_things <span class="is-purple">=</span> [2 + 5, 'самурай', true];</code></div>
+          </div>
+          <div class="stab">
+            <div class="stab-label">вы набрали <strong>массив</strong></div>
+            <div class="stab-code"><code class="stabilo">var my_things = <span class="is-black">[</span><span class="is-red">2</span><span class="is-purple"> + </span><span class="is-red">5</span><span class="is-black">, </span><span class="is-green">'самурай'</span><span class="is-black">, </span><span class="is-purple">true</span><span class="is-black">]</span>;</code></div>
+          </div>
+          <div class="stab">
+            <div class="stab-label">вы набрали <strong>точку с запятой</strong>, чтобы закончить утверждение</div>
+            <div class="stab-code"><code class="stabilo">var my_things = [2 + 5, 'самурай', true]<span class="is-black">;</span></code></div>
+          </div>
+        </div>
+
+        <p>
+          Это означает, что <code>my_things</code> равен <code>[2 + 5, 'самурай', true]</code>.
+        </p>
+
+        <p>
+          Теперь вернёмся к функции <code>alert</code>.
+        </p>
+
+        <p>
+          Поскольку теперь мы имеем <em>два действия</em>, нам нужно разделить их <strong>точкой с запятой</strong> <code>;</code>, чтобы знать, где заканчивается одно и начинается другое.
+        </p>
+
+        <div class="snippet">
+          <div class="snippet-contents">
+            <pre class="highlight"><code>var my_things = [2 + 5, 'самурай', true];
+    alert(my_things);</code></pre>
+
+          </div>
+
+          <a class="snippet-copy not-mobile not-tablet">
+            Копировать
+          </a>
+
+        </div>
+
+      </div>
+    </div>
+
+
+
+    <div id="step19" class="step">
+      <div class="content">
+
+        <h2 class="gj"><div class="check">
+          <div class="check-circle"></div>
+          <svg class="check-svg" width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+              <polyline stroke="#65B280" stroke-width="4" points="11 19 18 26 29 14"></polyline>
+            </g>
+          </svg>
+        </div>
+        Замечательно!</h2>
+
+        <p>
+          Сохранив массив в переменной, нам удалось сделать код более <strong>читабельным</strong>.
+        </p>
+
+        <p>
+          Хотя эта переменная содержит массив из нескольких элементов, мы можем захотеть иметь дело только с <strong>одним</strong> элементом массива.
+        </p>
+
+        <p>
+          Чтобы получить доступ к <em>конкретному элементу</em> массива, вам нужно знать его <strong>индекс</strong> (позицию) в массиве. Затем нужно обернуть этот индекс в <strong>квадратные скобки</strong>.
+        </p>
+
+        <p>
+          Можете ли вы догадаться, какое значение будет отображаться?
+        </p>
+
+        <div class="snippet">
+          <div class="snippet-contents">
+            <pre class="highlight"><code>var my_things = [2 + 5, 'самурай', true];
+    alert(my_things[1]);</code></pre>
+          </div>
+
+          <a class="snippet-copy not-mobile not-tablet">
+            Копировать
+          </a>
+
+        </div>
+
+      </div>
+    </div>
+
+
+
+    <div id="step20" class="step">
+      <div class="content">
+
+        <h2 class="gj"><div class="check">
+          <div class="check-circle"></div>
+          <svg class="check-svg" width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+              <polyline stroke="#65B280" stroke-width="4" points="11 19 18 26 29 14"></polyline>
+            </g>
+          </svg>
+        </div>
+      Верно!</h2>
+
+      <p>
+        Появился <strong>второй элемент</strong>. В программировании индексы начинаются с нуля <code>0</code>.
+      </p>
+
+      <div class="stabs is-vertical">
+        <div class="stab">
+          <div class="stab-label">вы набрали <strong>имя</strong> массива</div>
+          <div class="stab-code"><code class="stabilo"><span class="is-blue">my_things</span>[1]</code></div>
+        </div>
+        <div class="stab">
+          <div class="stab-label">вы открыли <strong>квадратную скобку</strong></div>
+          <div class="stab-code"><code class="stabilo">my_things<span class="is-black">[</span>1]</code></div>
+        </div>
+        <div class="stab">
+          <div class="stab-label">вы набрали <strong>индекс</strong> элемента, к которому вы хотели получить доступ</div>
+          <div class="stab-code"><code class="stabilo">my_things[<span class="is-red">1</span>]</code></div>
+        </div>
+        <div class="stab">
+          <div class="stab-label">вы <strong>закрыли</strong> квадратную скобку</div>
+          <div class="stab-code"><code class="stabilo">my_things[1<span class="is-black">]</span></code></div>
+        </div>
+      </div>
+
+      <p>
+        Но оказывается, что массивы — тоже <strong>объекты</strong>! Это означает, что массивы также имеют <strong>свойства</strong> и <strong>методы</strong>.
+      </p>
+
+      <p>
+        Например, <code>my_things</code> имеет свойство <code>length</code>:
+      </p>
+
+      <div class="snippet">
+        <div class="snippet-contents">
+          <pre class="highlight"><code>var my_things = [2 + 5, 'самурай', true];
+    alert(my_things.length);</code></pre>
+        </div>
+
+        <a class="snippet-copy not-mobile not-tablet">
+          Копировать
+        </a>
 
       </div>
 
-      <a class="snippet-copy not-mobile not-tablet">
-        Копировать
-      </a>
-
+    </div>
     </div>
 
-  </div>
-</div>
 
-<!-- 19 -->
-<div id="step19" class="step">
-  <div class="content">
 
-    <h2 class="gj"><div class="check">
-      <div class="check-circle"></div>
-      <svg class="check-svg" width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-          <polyline stroke="#65B280" stroke-width="4" points="11 19 18 26 29 14"></polyline>
-        </g>
-      </svg>
-    </div>
-  Замечательно!</h2>
+    <div id="step21" class="step">
+      <div class="content">
+
+        <h2 class="gj"><div class="check">
+          <div class="check-circle"></div>
+          <svg class="check-svg" width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+              <polyline stroke="#65B280" stroke-width="4" points="11 19 18 26 29 14"></polyline>
+            </g>
+          </svg>
+        </div>
+        Это верно!</h2>
+
+        <p>
+          Массив содержит <strong>3</strong> элемента. Если вы добавите или удалите элементы в <code>my_things</code>, то значение <code>length</code> изменится соответствующим образом.
+        </p>
+
+        <p>
+          Хотя читабельность и свойства полезны, основной концепцией массива является то, что <strong>его можно редактировать</strong>.
+        </p>
+
+        <div class="snippet">
+          <div class="snippet-contents">
+            <pre class="highlight"><code>var my_things = [2 + 5, 'самурай', true];
+      alert(my_things);
+      my_things = [2 + 5, 'самурай', true, 'ЛЮБОВЬ'];
+      alert(my_things);</code></pre>
+          </div>
+
+          <a class="snippet-copy not-mobile not-tablet">
+            Копировать
+          </a>
+
+        </div>
 
-  <p>
-    Сохранив массив в переменной, нам удалось сделать код более <strong>читабельным</strong>.
-  </p>
-
-  <p>
-    Хотя эта переменная содержит массив из нескольких элементов, мы можем захотеть иметь дело только с <strong>одним</strong> элементом массива.
-  </p>
-
-  <p>
-    Чтобы получить доступ к <em>конкретному элементу</em> массива, вам нужно знать его <strong>индекс</strong> (позицию) в массиве. Затем нужно обернуть этот индекс в <strong>квадратные скобки</strong>.
-  </p>
-
-  <p>
-    Можете ли вы догадаться, какое значение будет отображаться?
-  </p>
-
-  <div class="snippet">
-    <div class="snippet-contents">
-      <pre class="highlight"><code>var my_things = [2 + 5, 'самурай', true];
-alert(my_things[1]);</code></pre>
-    </div>
-
-    <a class="snippet-copy not-mobile not-tablet">
-      Копировать
-    </a>
-
-  </div>
-
-</div>
-</div>
-
-<!-- 20 -->
-<div id="step20" class="step">
-  <div class="content">
-
-    <h2 class="gj"><div class="check">
-      <div class="check-circle"></div>
-      <svg class="check-svg" width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-          <polyline stroke="#65B280" stroke-width="4" points="11 19 18 26 29 14"></polyline>
-        </g>
-      </svg>
-    </div>
-  Верно!</h2>
-
-  <p>
-    Появился <strong>второй элемент</strong>. В программировании индексы начинаются с нуля <code>0</code>.
-  </p>
-
-  <div class="stabs is-vertical">
-    <div class="stab">
-      <div class="stab-label">вы набрали <strong>имя</strong> массива</div>
-      <div class="stab-code"><code class="stabilo"><span class="is-blue">my_things</span>[1]</code></div>
-    </div>
-    <div class="stab">
-      <div class="stab-label">вы открыли <strong>квадратную скобку</strong></div>
-      <div class="stab-code"><code class="stabilo">my_things<span class="is-black">[</span>1]</code></div>
-    </div>
-    <div class="stab">
-      <div class="stab-label">вы набрали <strong>индекс</strong> элемента, к которому вы хотели получить доступ</div>
-      <div class="stab-code"><code class="stabilo">my_things[<span class="is-red">1</span>]</code></div>
-    </div>
-    <div class="stab">
-      <div class="stab-label">вы <strong>закрыли</strong> квадратную скобку</div>
-      <div class="stab-code"><code class="stabilo">my_things[1<span class="is-black">]</span></code></div>
-    </div>
-  </div>
-
-  <p>
-    Но оказывается, что массивы — тоже <strong>объекты</strong>! Это означает, что массивы также имеют <strong>свойства</strong> и <strong>методы</strong>.
-  </p>
-
-  <p>
-    Например, <code>my_things</code> имеет свойство <code>length</code>:
-  </p>
-
-  <div class="snippet">
-    <div class="snippet-contents">
-      <pre class="highlight"><code>var my_things = [2 + 5, 'самурай', true];
-alert(my_things.length);</code></pre>
-    </div>
-
-    <a class="snippet-copy not-mobile not-tablet">
-      Копировать
-    </a>
-
-  </div>
-
-</div>
-</div>
-
-<!-- 21 -->
-<div id="step21" class="step">
-  <div class="content">
-
-    <h2 class="gj"><div class="check">
-      <div class="check-circle"></div>
-      <svg class="check-svg" width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-          <polyline stroke="#65B280" stroke-width="4" points="11 19 18 26 29 14"></polyline>
-        </g>
-      </svg>
-    </div>
-  Это верно!</h2>
-
-  <p>
-    Массив содержит <strong>3</strong> элемента. Если вы добавите или удалите элементы в <code>my_things</code>, то значение <code>length</code> изменится соответствующим образом.
-  </p>
-
-  <p>
-    Хотя читабельность и свойства полезны, основной концепцией массива является то, что <strong>его можно редактировать</strong>.
-  </p>
-
-  <div class="snippet">
-    <div class="snippet-contents">
-      <pre class="highlight"><code>var my_things = [2 + 5, 'самурай', true];
-alert(my_things);
-my_things = [2 + 5, 'самурай', true, 'ЛЮБОВЬ'];
-alert(my_things);</code></pre>
-    </div>
-
-    <a class="snippet-copy not-mobile not-tablet">
-      Копировать
-    </a>
-
-  </div>
-
-</div>
-</div>
-
-<!-- 22 -->
-<div id="step22" class="step">
-  <div class="content">
-
-    <h2 class="gj"><div class="check">
-      <div class="check-circle"></div>
-      <svg class="check-svg" width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-          <polyline stroke="#65B280" stroke-width="4" points="11 19 18 26 29 14"></polyline>
-        </g>
-      </svg>
-    </div>
-  Ага!</h2>
-
-  <p>
-    Появились два окна, но с разными значениями! Это связано с тем, что между первым и вторым вызовом значение <code>my_things</code> было <strong>переопределено</strong> с добавлением четвёртого элемента (строка <code>'ЛЮБОВЬ'</code>).
-  </p>
-
-  <p>
-    Обратите внимание: при втором присвоении значения переменной <code>my_things</code>, мы <strong>не</strong> используем ключевое слово <code>var</code>. Это потому, что переменная <code>my_things</code> уже создана ранее.
-  </p>
-
-  <p>
-    <strong>Нужно использовать ключевое слово <code>var</code>, когда вы <em>создаете</em> новую переменную</strong>, но не при редактировании значения существующей.
-  </p>
-
-  <p>
-    Массивы имеют <strong>методы</strong>, поскольку являются объектами. Другим способом редактирования массива является метод <code>push()</code>:
-  </p>
-
-  <div class="snippet">
-    <div class="snippet-contents">
-      <pre class="highlight"><code>var my_things = [2 + 5, 'самурай', true];
-alert(my_things);
-my_things.push('Кнопка');
-alert(my_things);</code></pre>
-    </div>
-
-    <a class="snippet-copy not-mobile not-tablet">
-      Копировать
-    </a>
-
-  </div>
-
-</div>
-</div>
-
-<!-- 23 -->
-<div id="step23" class="step">
-  <div class="content">
-
-    <h2 class="gj"><div class="check">
-      <div class="check-circle"></div>
-      <svg class="check-svg" width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-          <polyline stroke="#65B280" stroke-width="4" points="11 19 18 26 29 14"></polyline>
-        </g>
-      </svg>
-    </div>
-  Фантастика!</h2>
-
-  <p>
-    Массив <code>my_things</code> теперь содержит <strong>4</strong> элемента.
-  </p>
-
-  <p>
-    Метод <code>push()</code> изменил массив, но другие методы просто <strong>возвращают</strong> значение.
-  </p>
-
-  <div class="snippet">
-    <div class="snippet-contents">
-      <pre class="highlight"><code>var my_things = [2 + 5, 'самурай', true];
-alert(my_things.includes('ниндзя'));</code></pre>
-    </div>
-
-    <a class="snippet-copy not-mobile not-tablet">
-      Копировать
-    </a>
-
-  </div>
-
-</div>
-</div>
-
-<!-- 24 -->
-<div id="step24" class="step">
-  <div class="content">
-
-    <h2 class="gj"><div class="check">
-      <div class="check-circle"></div>
-      <svg class="check-svg" width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-          <polyline stroke="#65B280" stroke-width="4" points="11 19 18 26 29 14"></polyline>
-        </g>
-      </svg>
-    </div>
-  Здесь ниндзя нет!</h2>
-
-  <p>
-    Метод <code>includes()</code> проверяет есть ли в массиве строка <code>'ниндзя'</code>. Такой строки нет, поэтому метод возвратил <code>false</code> (тип данных <strong>boolean</strong>).
-  </p>
-
-  <p>
-    Обычно, логические значения (<code>true</code> или <code>false</code>) встречаются в результате вызова функции (например, <code>includes()</code>) или как результат <strong>сравнения</strong>.
-  </p>
-
-  <p>
-    Вот сравнение «<em>больше</em>»:
-  </p>
-
-  <div class="snippet">
-    <div class="snippet-contents">
-      <pre class="highlight"><code>alert(window.innerWidth &gt; 400);</code></pre>
-    </div>
-
-    <a class="snippet-copy not-mobile not-tablet">
-      Копировать
-    </a>
-
-  </div>
-
-</div>
-</div>
-
-<!-- 25 -->
-<div id="step25" class="step">
-  <div class="content">
-
-    <h2 class="gj"><div class="check">
-      <div class="check-circle"></div>
-      <svg class="check-svg" width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-          <polyline stroke="#65B280" stroke-width="4" points="11 19 18 26 29 14"></polyline>
-        </g>
-      </svg>
-    </div>
-  Еще раз!</h2>
-
-  <p>
-    Если было показано <code>true</code>, значит окно вашего браузера <strong id="wider"></strong> сейчас шире <strong>400 пикселей</strong>.
-  </p>
-
-  <div class="stabs">
-    <div class="stab">
-      <div class="stab-label">вы набрали <strong>первый элемент</strong> для сравнения (число)</div>
-      <div class="stab-code"><code class="stabilo"><span class="is-blue">window<span class="is-black">.</span>innerWidth</span> > 400</code></div>
-    </div>
-    <div class="stab">
-      <div class="stab-label">вы набрали <strong>оператор</strong> «больше»</div>
-      <div class="stab-code"><code class="stabilo">window.innerWidth <span class="is-purple">></span> 400</code></div>
-    </div>
-    <div class="stab">
-      <div class="stab-label">вы набрали <strong>второй элемент</strong> (число)</div>
-      <div class="stab-code"><code class="stabilo">window.innerWidth > <span class="is-red">400</span></code></div>
-    </div>
-  </div>
-
-  <p>
-    Так же, как <code>+</code> и <code>*</code>, символ <code>&gt;</code> является <strong>оператором</strong> JavaScript.
-  </p>
-
-  <p>
-    Когда вы делаете такое сравнение с оператором «<em>больше</em>» <code>&gt;</code>, вы получаете значение <strong>boolean</strong>.
-  </p>
-
-  <p>
-    Поскольку результат <strong>сравнения</strong> возвращает только <strong>2</strong> возможных результата (<code>true</code> или <code>false</code>), это полезно в тех случаях, код должен <a onclick="showStep(26);">принять решение</a>...
-  </p>
-</div>
-</div>
-
-<!-- 26 -->
-<div id="step26" class="step">
-  <div class="content">
-    <h2>Условия <span class="stamp is-concept">Концепция</span></h2>
-
-    <p>
-      Условные выражения — одно из наиболее важных понятий в программировании. Они позволяют выполнять определенные команды <em>только если</em> соблюдены определенные условия. Эти условия могут, к примеру, основываться на:
-    </p>
-
-    <ul>
-      <li>
-        авторизации пользователя (был ли пароль введен правильно?)
-      </li>
-      <li>
-        текущем состоянии (день или ночь?)
-      </li>
-      <li>
-        каком-либо значении (этот человек старше 18 лет?)
-      </li>
-    </ul>
-
-    <p>
-      Давайте покажем окно предупреждения только если вы оказались на домене редактора этого документа.
-    </p>
-
-    <div class="snippet">
-      <div class="snippet-contents">
-        <pre class="highlight"><code>if (window.location.hostname == 'nicothin.pro') {
-  alert('Добро пожаловать на мой домен!');
-}</code></pre>
       </div>
-
-      <a class="snippet-copy not-mobile not-tablet">
-        Копировать
-      </a>
-
     </div>
 
-    <div class="message is-info">
-      <div class="message-body">
-        <p>Если вы хотите <strong>набрать</strong> этот код, а не просто скопировать его, то для переносов строк в консоли нажимайте <kbd class="key">Shift</kbd><kbd class="plus">+</kbd><kbd class="key">Enter</kbd></p>
+
+
+    <div id="step22" class="step">
+      <div class="content">
+
+        <h2 class="gj"><div class="check">
+          <div class="check-circle"></div>
+          <svg class="check-svg" width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+              <polyline stroke="#65B280" stroke-width="4" points="11 19 18 26 29 14"></polyline>
+            </g>
+          </svg>
+        </div>
+        Ага!</h2>
+
+        <p>
+          Появились два окна, но с разными значениями! Это связано с тем, что между первым и вторым вызовом значение <code>my_things</code> было <strong>переопределено</strong> с добавлением четвёртого элемента (строка <code>'ЛЮБОВЬ'</code>).
+        </p>
+
+        <p>
+          Обратите внимание: при втором присвоении значения переменной <code>my_things</code>, мы <strong>не</strong> используем ключевое слово <code>var</code>. Это потому, что переменная <code>my_things</code> уже создана ранее.
+        </p>
+
+        <p>
+          <strong>Нужно использовать ключевое слово <code>var</code>, когда вы <em>создаете</em> новую переменную</strong>, но не при редактировании значения существующей.
+        </p>
+
+        <p>
+          Массивы имеют <strong>методы</strong>, поскольку являются объектами. Другим способом редактирования массива является метод <code>push()</code>:
+        </p>
+
+        <div class="snippet">
+          <div class="snippet-contents">
+            <pre class="highlight"><code>var my_things = [2 + 5, 'самурай', true];
+    alert(my_things);
+    my_things.push('Кнопка');
+    alert(my_things);</code></pre>
+          </div>
+
+          <a class="snippet-copy not-mobile not-tablet">
+            Копировать
+          </a>
+
+        </div>
+
+      </div>
+    </div>
+
+
+
+    <div id="step23" class="step">
+      <div class="content">
+
+        <h2 class="gj"><div class="check">
+          <div class="check-circle"></div>
+          <svg class="check-svg" width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+              <polyline stroke="#65B280" stroke-width="4" points="11 19 18 26 29 14"></polyline>
+            </g>
+          </svg>
+        </div>
+        Фантастика!</h2>
+
+        <p>
+          Массив <code>my_things</code> теперь содержит <strong>4</strong> элемента.
+        </p>
+
+        <p>
+          Метод <code>push()</code> изменил массив, но другие методы просто <strong>возвращают</strong> значение.
+        </p>
+
+        <div class="snippet">
+          <div class="snippet-contents">
+            <pre class="highlight"><code>var my_things = [2 + 5, 'самурай', true];
+    alert(my_things.includes('ниндзя'));</code></pre>
+          </div>
+
+          <a class="snippet-copy not-mobile not-tablet">
+            Копировать
+          </a>
+
+        </div>
+
+      </div>
+    </div>
+
+
+
+    <div id="step24" class="step">
+      <div class="content">
+
+        <h2 class="gj"><div class="check">
+          <div class="check-circle"></div>
+          <svg class="check-svg" width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+              <polyline stroke="#65B280" stroke-width="4" points="11 19 18 26 29 14"></polyline>
+            </g>
+          </svg>
+        </div>
+        Здесь ниндзя нет!</h2>
+
+        <p>
+          Метод <code>includes()</code> проверяет есть ли в массиве строка <code>'ниндзя'</code>. Такой строки нет, поэтому метод возвратил <code>false</code> (тип данных <strong>boolean</strong>).
+        </p>
+
+        <p>
+          Обычно, логические значения (<code>true</code> или <code>false</code>) встречаются в результате вызова функции (например, <code>includes()</code>) или как результат <strong>сравнения</strong>.
+        </p>
+
+        <p>
+          Вот сравнение «<em>больше</em>»:
+        </p>
+
+        <div class="snippet">
+          <div class="snippet-contents">
+            <pre class="highlight"><code>alert(window.innerWidth &gt; 400);</code></pre>
+          </div>
+
+          <a class="snippet-copy not-mobile not-tablet">
+            Копировать
+          </a>
+
+        </div>
+
+      </div>
+    </div>
+
+
+
+    <div id="step25" class="step">
+      <div class="content">
+
+        <h2 class="gj"><div class="check">
+          <div class="check-circle"></div>
+          <svg class="check-svg" width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+              <polyline stroke="#65B280" stroke-width="4" points="11 19 18 26 29 14"></polyline>
+            </g>
+          </svg>
+        </div>
+        Еще раз!</h2>
+
+        <p>
+          Если было показано <code>true</code>, значит окно вашего браузера <strong id="wider"></strong> сейчас шире <strong>400 пикселей</strong>.
+        </p>
+
+        <div class="stabs">
+          <div class="stab">
+            <div class="stab-label">вы набрали <strong>первый элемент</strong> для сравнения (число)</div>
+            <div class="stab-code"><code class="stabilo"><span class="is-blue">window<span class="is-black">.</span>innerWidth</span> > 400</code></div>
+          </div>
+          <div class="stab">
+            <div class="stab-label">вы набрали <strong>оператор</strong> «больше»</div>
+            <div class="stab-code"><code class="stabilo">window.innerWidth <span class="is-purple">></span> 400</code></div>
+          </div>
+          <div class="stab">
+            <div class="stab-label">вы набрали <strong>второй элемент</strong> (число)</div>
+            <div class="stab-code"><code class="stabilo">window.innerWidth > <span class="is-red">400</span></code></div>
+          </div>
+        </div>
+
+        <p>
+          Так же, как <code>+</code> и <code>*</code>, символ <code>&gt;</code> является <strong>оператором</strong> JavaScript.
+        </p>
+
+        <p>
+          Когда вы делаете такое сравнение с оператором «<em>больше</em>» <code>&gt;</code>, вы получаете значение <strong>boolean</strong>.
+        </p>
+
+        <p>
+          Поскольку результат <strong>сравнения</strong> возвращает только <strong>2</strong> возможных результата (<code>true</code> или <code>false</code>), это полезно в тех случаях, код должен <a onclick="showStep(26);">принять решение</a>...
+        </p>
+      </div>
+    </div>
+
+
+
+    <div id="step26" class="step">
+      <div class="content">
+        <h2>Условия <span class="stamp is-concept">Концепция</span></h2>
+
+        <p>
+          Условные выражения — одно из наиболее важных понятий в программировании. Они позволяют выполнять определенные команды <em>только если</em> соблюдены определенные условия. Эти условия могут, к примеру, основываться на:
+        </p>
+
+        <ul>
+          <li>
+            авторизации пользователя (был ли пароль введен правильно?)
+          </li>
+          <li>
+            текущем состоянии (день или ночь?)
+          </li>
+          <li>
+            каком-либо значении (этот человек старше 18 лет?)
+          </li>
+        </ul>
+
+        <p>
+          Давайте покажем окно предупреждения только если вы оказались на домене редактора этого документа.
+        </p>
+
+        <div class="snippet">
+          <div class="snippet-contents">
+            <pre class="highlight"><code>if (window.location.hostname == 'nicothin.pro') {
+      alert('Добро пожаловать на мой домен!');
+    }</code></pre>
+          </div>
+
+          <a class="snippet-copy not-mobile not-tablet">
+            Копировать
+          </a>
+
+        </div>
+
+        <div class="message is-info">
+          <div class="message-body">
+            <p>Если вы хотите <strong>набрать</strong> этот код, а не просто скопировать его, то для переносов строк в консоли нажимайте <kbd class="key">Shift</kbd><kbd class="plus">+</kbd><kbd class="key">Enter</kbd></p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-
-  <!-- 27 -->
-  <div id="step27" class="step">
-    <div class="content">
-
-      <h2 class="gj"><div class="check">
-        <div class="check-circle"></div>
-        <svg class="check-svg" width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-          <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-            <polyline stroke="#65B280" stroke-width="4" points="11 19 18 26 29 14"></polyline>
-          </g>
-        </svg>
-      </div>
-    Дважды равно!</h2>
-
-    <p>
-      Здесь мы делаем сравнение. В Javascript для этого используется оператор <code>==</code> (два знака «равно»).
-    </p>
-
-    <div class="stabs is-vertical">
-      <div class="stab">
-        <div class="stab-label">вы набрали <strong>ключевое слово</strong> <code>if</code></div>
-        <div class="stab-code"><code class="stabilo"><span class="is-purple">if</span> (window.location.hostname == 'nicothin.pro') {</code></div>
-      </div>
-      <div class="stab">
-        <div class="stab-label">вы открыли <strong>скобку</strong></div>
-        <div class="stab-code"><code class="stabilo">if <span class="is-black">(</span>window.location.hostname == 'nicothin.pro') {</code></div>
-      </div>
-      <div class="stab">
-        <div class="stab-label">вы набрали <strong>условие</strong></div>
-        <div class="stab-code"><code class="stabilo">if (<span class="is-blue">window</span><span class="is-black">.</span><span class="is-blue">location</span><span class="is-black">.</span><span class="is-blue">hostname</span><span class="is-purple"> == </span><span class="is-green">'nicothin.pro'</span>) {</code></div>
-      </div>
-      <div class="stab">
-        <div class="stab-label">вы <strong>закрыли</strong> скобку</div>
-        <div class="stab-code"><code class="stabilo">if (window.location.hostname == 'nicothin.pro'<span class="is-black">)</span> {</code></div>
-      </div>
-      <div class="stab">
-        <div class="stab-label">вы открыли <strong>фигурную скобку</strong></div>
-        <div class="stab-code"><code class="stabilo">if (window.location.hostname == 'nicothin.pro') <span class="is-black">{</span></code></div>
-      </div>
-      <div class="stab">
-        <div class="stab-label">вы написали <strong>блок кода</strong> который выполняется только если предыдущее условие <strong>true</strong></div>
-        <div class="stab-code"><code class="stabilo"><span class="is-blue">&nbsp;&nbsp;alert</span><span class="is-black">(</span><span class="is-green">'Добро пожаловать на мой домен!'</span><span class="is-black">)</span></code></div>
-      </div>
-      <div class="stab">
-        <div class="stab-label">вы <strong>закрыли</strong> фигурную скобку</div>
-        <div class="stab-code"><code class="stabilo"><span class="is-black">}</span></code></div>
-      </div>
-    </div>
-
-    <p>
-      Окно предупреждения <em>появилось</em>, значит <strong>имя хоста</strong> действительно равно <code>'nicothin.pro'</code>!
-    </p>
-
-    <p>
-      Мы обработали случай, когда сравнение возвращает <code>true</code>.
-    </p>
-
-    <p>
-      Для обработки <strong>противоположного случая</strong>, когда имя хоста не <code>'nicothin.pro'</code>, мы можем использовать <strong>оператор</strong> «<em>не равно</em>» <code>!=</code>:
-    </p>
-
-    <div class="snippet">
-      <div class="snippet-contents">
-        <pre class="highlight"><code>if (window.location.hostname != 'nicothin.pro') {
-  alert('Пожалуйста возвращайся скорее!');
-}</code></pre>
-
-      </div>
-
-    </div>
-
-    <p>
-      Этот фрагмент кода ничего не запускает.
-    </p>
-
-    <p>
-      Но что если мы хотели обрабатывать оба случая <strong>одновременно</strong>? Можно написать два оператора <code>if</code>, однако одно утверждение является полной противоположностью другого и мы можем объединить их с помощью <code>else</code>:
-    </p>
-
-    <div class="snippet">
-      <div class="snippet-contents">
-        <pre class="highlight"><code>if (window.location.hostname == 'nicothin.pro') {
-  alert('Добро пожаловать на мой домен! 🤗');
-} else {
-  alert('Пожалуйста возвращайся скорее! 😉');
-}</code></pre>
-
-      </div>
-
-      <a class="snippet-copy not-mobile not-tablet">
-        Копировать
-      </a>
-
-    </div>
 
 
 
-  </div>
-</div>
+    <div id="step27" class="step">
+      <div class="content">
 
-<!-- 28 -->
-<div id="step28" class="step">
-  <div class="content">
+        <h2 class="gj"><div class="check">
+          <div class="check-circle"></div>
+          <svg class="check-svg" width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+              <polyline stroke="#65B280" stroke-width="4" points="11 19 18 26 29 14"></polyline>
+            </g>
+          </svg>
+        </div>
+        Дважды равно!</h2>
 
-    <h2 class="gj"><div class="check">
-      <div class="check-circle"></div>
-      <svg class="check-svg" width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-          <polyline stroke="#65B280" stroke-width="4" points="11 19 18 26 29 14"></polyline>
-        </g>
-      </svg>
-    </div>
-  Все варианты!</h2>
+        <p>
+          Здесь мы делаем сравнение. В Javascript для этого используется оператор <code>==</code> (два знака «равно»).
+        </p>
 
-  <p>С таким условием мы можем быть уверены, что:</p>
+        <div class="stabs is-vertical">
+          <div class="stab">
+            <div class="stab-label">вы набрали <strong>ключевое слово</strong> <code>if</code></div>
+            <div class="stab-code"><code class="stabilo"><span class="is-purple">if</span> (window.location.hostname == 'nicothin.pro') {</code></div>
+          </div>
+          <div class="stab">
+            <div class="stab-label">вы открыли <strong>скобку</strong></div>
+            <div class="stab-code"><code class="stabilo">if <span class="is-black">(</span>window.location.hostname == 'nicothin.pro') {</code></div>
+          </div>
+          <div class="stab">
+            <div class="stab-label">вы набрали <strong>условие</strong></div>
+            <div class="stab-code"><code class="stabilo">if (<span class="is-blue">window</span><span class="is-black">.</span><span class="is-blue">location</span><span class="is-black">.</span><span class="is-blue">hostname</span><span class="is-purple"> == </span><span class="is-green">'nicothin.pro'</span>) {</code></div>
+          </div>
+          <div class="stab">
+            <div class="stab-label">вы <strong>закрыли</strong> скобку</div>
+            <div class="stab-code"><code class="stabilo">if (window.location.hostname == 'nicothin.pro'<span class="is-black">)</span> {</code></div>
+          </div>
+          <div class="stab">
+            <div class="stab-label">вы открыли <strong>фигурную скобку</strong></div>
+            <div class="stab-code"><code class="stabilo">if (window.location.hostname == 'nicothin.pro') <span class="is-black">{</span></code></div>
+          </div>
+          <div class="stab">
+            <div class="stab-label">вы написали <strong>блок кода</strong> который выполняется только если предыдущее условие <strong>true</strong></div>
+            <div class="stab-code"><code class="stabilo"><span class="is-blue">&nbsp;&nbsp;alert</span><span class="is-black">(</span><span class="is-green">'Добро пожаловать на мой домен!'</span><span class="is-black">)</span></code></div>
+          </div>
+          <div class="stab">
+            <div class="stab-label">вы <strong>закрыли</strong> фигурную скобку</div>
+            <div class="stab-code"><code class="stabilo"><span class="is-black">}</span></code></div>
+          </div>
+        </div>
 
-  <ul>
-    <li>сработает <strong>только одно</strong> оповещение, но не оба</li>
-    <li>как минимум, одно из двух оповещений <em>будет</em> показано, ибо мы покрываем <strong>все</strong> случаи</li>
-  </ul>
+        <p>
+          Окно предупреждения <em>появилось</em>, значит <strong>имя хоста</strong> действительно равно <code>'nicothin.pro'</code>!
+        </p>
 
-  <p>
-    <code>else</code> полезен для покрытия всех <em>оставшихся</em> случаев, но что если вы хотите обрабатывать более двух случаев?
-    <br>
-    Используйте <code>else if</code>.
-  </p>
+        <p>
+          Мы обработали случай, когда сравнение возвращает <code>true</code>.
+        </p>
 
-  <div class="snippet">
-    <div class="snippet-contents">
-      <pre class="highlight"><code>if (window.innerWidth &gt; 2000) {
-  alert('Большой экран!');
-} else</span> if (window.innerWidth &lt; 600) {
-  alert('Возможно, мобильный телефон');
-} else {
-  alert('Достойный размер');
-}</code></pre>
-    </div>
+        <p>
+          Для обработки <strong>противоположного случая</strong>, когда имя хоста не <code>'nicothin.pro'</code>, мы можем использовать <strong>оператор</strong> «<em>не равно</em>» <code>!=</code>:
+        </p>
 
-    <a class="snippet-copy not-mobile not-tablet">
-      Копировать
-    </a>
+        <div class="snippet">
+          <div class="snippet-contents">
+            <pre class="highlight"><code>if (window.location.hostname != 'nicothin.pro') {
+      alert('Пожалуйста возвращайся скорее!');
+    }</code></pre>
 
-  </div>
+          </div>
 
-</div>
-</div>
+        </div>
 
-<!-- 29 -->
-<div id="step29" class="step">
-  <div class="content">
+        <p>
+          Этот фрагмент кода ничего не запускает.
+        </p>
 
-    <h2 class="gj"><div class="check">
-      <div class="check-circle"></div>
-      <svg class="check-svg" width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-          <polyline stroke="#65B280" stroke-width="4" points="11 19 18 26 29 14"></polyline>
-        </g>
-      </svg>
-    </div>
-  Ясно!</h2>
+        <p>
+          Но что если мы хотели обрабатывать оба случая <strong>одновременно</strong>? Можно написать два оператора <code>if</code>, однако одно утверждение является полной противоположностью другого и мы можем объединить их с помощью <code>else</code>:
+        </p>
 
-  <p>
-    Как только какое-то сравнение возвращает <code>true</code>, соответствующий ему код будет запущен, а все последующие утверждения будут проигнорированы. Вот почему появилось только одно окно.
-  </p>
+        <div class="snippet">
+          <div class="snippet-contents">
+            <pre class="highlight"><code>if (window.location.hostname == 'nicothin.pro') {
+      alert('Добро пожаловать на мой домен! 🤗');
+    } else {
+      alert('Пожалуйста возвращайся скорее! 😉');
+    }</code></pre>
 
-  <p>
-    Условные операторы используют <strong>ключевые слова</strong> <code>if</code> и <code>else</code>, а затем набор <strong>круглых скобок</strong>.
-  </p>
+          </div>
 
-  <p>
-    Комбинация ключевых слов и скобок также существует для другой <a onclick="showStep(30);">важной концепции программирования...</a>
-  </p>
-</div>
-</div>
+          <a class="snippet-copy not-mobile not-tablet">
+            Копировать
+          </a>
 
-<!-- 30 -->
-<div id="step30" class="step">
-  <div class="content">
-    <h2>Циклы <span class="stamp is-concept">Концепция</span></h2>
+        </div>
 
-    <p>
-      Если вы хотите выполнить блок кода <em>определенное количество</em> раз, нужно использовать <strong>цикл</strong>.
-    </p>
 
-    <p>
-      Можете ли вы догадаться, сколько предупреждающих окон запускает этот фрагмент?
-    </p>
-
-    <div class="snippet">
-      <div class="snippet-contents">
-        <pre class="highlight"><code>for (var i = 0; i &lt; 3; i++) {
-  alert(i);
-}</code></pre>
-      </div>
-
-      <a class="snippet-copy not-mobile not-tablet">
-        Копировать
-      </a>
-
-    </div>
-
-  </div>
-</div>
-
-<!-- 31 -->
-<div id="step31" class="step">
-  <div class="content">
-
-    <h2 class="gj"><div class="check">
-      <div class="check-circle"></div>
-      <svg class="check-svg" width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-          <polyline stroke="#65B280" stroke-width="4" points="11 19 18 26 29 14"></polyline>
-        </g>
-      </svg>
-    </div>
-  Это три!</h2>
-
-  <p>
-    Давайте проанализируем, что произошло:
-  </p>
-
-  <ul>
-    <li>
-      <code>var i = 0</code> — <strong>начальное состояние</strong> <br>
-      Прежде чем цикл начнется, переменной <code>i</code> присваивается значение <code>0</code>.
-    </li>
-    <li>
-      <code>i &lt; 3</code> является <strong>условным выражением</strong> <br>
-      На каждой итерации цикла мы проверяем это сравнение. <br>
-      Если это <code>true</code>, выполняем код в блоке. <br>
-      Если это <code>false</code>, выходим из цикла. <br>
-    </li>
-    <li>
-      <code>i++</code> — выражение <strong>увеличения</strong> <br>
-      Если выполнится блок кода, значение <code>i</code> увеличивается на 1.
-    </li>
-  </ul>
-
-  <p>
-    Вот как вы его реализовали:
-  </p>
-
-  <div class="stabs is-vertical">
-    <div class="stab">
-      <div class="stab-label">вы набрали <strong>слово</strong> <code>for</code></div>
-      <div class="stab-code"><code class="stabilo"><span class="is-purple">for</span> (var i = 0; i < 3; i++) {</code></div>
-    </div>
-    <div class="stab">
-      <div class="stab-label">вы открыли <strong>скобку</strong></div>
-      <div class="stab-code"><code class="stabilo">for <span class="is-black">(</span>var i = 0; i < 3; i++) {</code></div>
-    </div>
-    <div class="stab">
-      <div class="stab-label">вы указали <strong>начальное состояние</strong></div>
-      <div class="stab-code"><code class="stabilo">for (<span class="is-purple">var </span><span class="is-blue">i</span><span class="is-purple"> = </span><span class="is-red">0</span>; i < 3; i++) {</code></div>
-    </div>
-    <div class="stab">
-      <div class="stab-label">вы набрали <strong>точку с запятой</strong> чтобы отделить выражение</div>
-      <div class="stab-code"><code class="stabilo">for (var i = 0<span class="is-black">;</span> i < 3; i++) {</code></div>
-    </div>
-    <div class="stab">
-      <div class="stab-label">вы ввели <strong>проверку</strong></div>
-      <div class="stab-code"><code class="stabilo">for (var i = 0; <span class="is-blue">i</span><span class="is-purple"> < </span><span class="is-red">3</span>; i++) {</code></div>
-    </div>
-    <div class="stab">
-      <div class="stab-label">вы набрали <strong>точку с запятой</strong> чтобы отделить выражение</div>
-      <div class="stab-code"><code class="stabilo">for (var i = 0; i < 3<span class="is-black">;</span> i++) {</code></div>
-    </div>
-    <div class="stab">
-      <div class="stab-label">вы ввели выражение <strong>увеличения</strong></div>
-      <div class="stab-code"><code class="stabilo">for (var i = 0; i < 3; <span class="is-blue">i</span><span class="is-purple">++</span>) {</code></div>
-    </div>
-    <div class="stab">
-      <div class="stab-label">вы <strong>закрыли</strong> скобку</div>
-      <div class="stab-code"><code class="stabilo">for (var i = 0; i < 3; i++<span class="is-black">)</span> {</code></div>
-    </div>
-    <div class="stab">
-      <div class="stab-label">вы открыли <strong>фигурную скобку</strong></div>
-      <div class="stab-code"><code class="stabilo">for (var i = 0; i < 3; i++) <span class="is-black">{</span></code></div>
-    </div>
-    <div class="stab">
-      <div class="stab-label">вы ввели <strong>тело цикла</strong> (выполняется только если проверка дала <strong>true</strong>)</div>
-      <div class="stab-code"><code class="stabilo"><span class="is-blue">&nbsp;&nbsp;alert</span><span class="is-black">(</span><span class="is-blue">i</span><span class="is-black">);</span></code></div>
-    </div>
-    <div class="stab">
-      <div class="stab-label">вы <strong>закрыли</strong> фигурную скобку</div>
-      <div class="stab-code"><code class="stabilo"><span class="is-black">}</span></code></div>
-    </div>
-  </div>
-
-  <p>
-    Проанализируем каждую итерацию цикла:
-  </p>
-
-  <div class="table-container">
-    <table>
-      <thead>
-        <tr>
-          <th>Итерация</th>
-          <th>Значение <code>i</code></th>
-          <th>Test</th>
-          <th>Запустить?</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>1</td>
-          <td>0</td>
-          <td><code>0&nbsp;<&nbsp;3</code></td>
-          <td>Да</td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td>1</td>
-          <td><code>1&nbsp;<&nbsp;3</code></td>
-          <td>Да</td>
-        </tr>
-        <tr>
-          <td>3</td>
-          <td>2</td>
-          <td><code>2&nbsp;<&nbsp;3</code></td>
-          <td>Да</td>
-        </tr>
-        <tr>
-          <td>4</td>
-          <td>3</td>
-          <td><code>3&nbsp;<&nbsp;3</code></td>
-          <td><strong>Нет!</strong></td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-
-  <p>
-    Этот цикл позволил нам <strong>повторить</strong> действие N раз.
-  </p>
-
-  <p>
-    Есть один тип данных, для которого <a onclick="showStep(32);">циклы крайне важны...</a>
-  </p>
-</div>
-</div>
-
-<!-- 32 -->
-<div id="step32" class="step">
-  <div class="content">
-    <h2>Перебор массива <span class="stamp is-tool">Инструменты</span></h2>
-
-    <p>
-      Массивы и циклы буквально созданы друг для друга! Мы часто хотим повторить <strong>одно и то же действие</strong> для <em>каждого</em> элемента массива.
-    </p>
-
-    <p>
-      Предположим, мы хотим вызвать по отдельному окну сообщения для <em>каждого</em> элемента массива. Можно написать столько функций <code>alert()</code>, сколько есть элементов в массиве, но это решение громоздкое, неэффективное, подвержено ошибкам и плохо масштабируется (особенно с большими массивами).
-    </p>
-
-    <p>
-      Языки программирования существуют, чтобы упростить нашу работу. Давайте найдём лучший способ. Мы уже знаем некоторые вещи:
-    </p>
-
-    <ul>
-      <li>
-        как получить <strong>длину</strong> массива,
-      </li>
-      <li>
-        как получить доступ к элементу массива через <strong>индекс</strong>,
-      </li>
-      <li>
-        у нас есть доступ к переменной <code>i</code>, которая увеличивается на 1 при каждом прохождении цикла.
-      </li>
-    </ul>
-
-    <p>
-      Объединив эти данные, мы можем разработать следующий код:
-    </p>
-
-    <div class="snippet">
-      <div class="snippet-contents">
-        <pre class="highlight"><code>var my_things = [2 + 5, 'самурай', true];
-for (var i = 0; i &lt; my_things.length; i++) {
-  alert(my_things[i]);
-}</code></pre>
 
       </div>
-
-      <a class="snippet-copy not-mobile not-tablet">
-        Копировать
-      </a>
-
     </div>
 
-  </div>
-</div>
 
-<!-- 33 -->
-<div id="step33" class="step">
-  <div class="content">
 
-    <h2 class="gj"><div class="check">
-      <div class="check-circle"></div>
-      <svg class="check-svg" width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-          <polyline stroke="#65B280" stroke-width="4" points="11 19 18 26 29 14"></polyline>
-        </g>
-      </svg>
-    </div>
-  По списку!</h2>
+    <div id="step28" class="step">
+      <div class="content">
 
-  <p>
-    Один за другим элементы массива отображались в их собственных окнах сообщений.
-  </p>
+        <h2 class="gj"><div class="check">
+          <div class="check-circle"></div>
+          <svg class="check-svg" width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+              <polyline stroke="#65B280" stroke-width="4" points="11 19 18 26 29 14"></polyline>
+            </g>
+          </svg>
+        </div>
+        Все варианты!</h2>
 
-  <p>
-    Хотя такой цикл упрощает процесс работы с элементом массива, нам все равно пришлось создать блок <code>for</code> <strong>вручную</strong> и создать новую переменную <code>i</code>, чья единственная цель — увеличиваться после каждой итерации.
-  </p>
+        <p>С таким условием мы можем быть уверены, что:</p>
 
-  <p>
-    Я знаю, о чем вы думаете. «<em><a onclick="showStep(34);">Должен быть лучший способ</a></em>»
-  </p>
-</div>
-</div>
+        <ul>
+          <li>сработает <strong>только одно</strong> оповещение, но не оба</li>
+          <li>как минимум, одно из двух оповещений <em>будет</em> показано, ибо мы покрываем <strong>все</strong> случаи</li>
+        </ul>
 
-<!-- 34 -->
-<div id="step34" class="step">
-  <div class="content">
-    <h2>forEach цикл <span class="stamp is-tool">Инструменты</span></h2>
+        <p>
+          <code>else</code> полезен для покрытия всех <em>оставшихся</em> случаев, но что если вы хотите обрабатывать более двух случаев?
+          <br>
+          Используйте <code>else if</code>.
+        </p>
 
-    <p>
-      У массивов на самом деле есть <strong>метод</strong> под названием <code>forEach()</code>, который позволяет выполнить действие отдельно для <em>каждого</em> элемента массива:
-    </p>
+        <div class="snippet">
+          <div class="snippet-contents">
+            <pre class="highlight"><code>if (window.innerWidth &gt; 2000) {
+      alert('Большой экран!');
+    } else</span> if (window.innerWidth &lt; 600) {
+      alert('Возможно, мобильный телефон');
+    } else {
+      alert('Достойный размер');
+    }</code></pre>
+          </div>
 
-    <div class="snippet">
-      <div class="snippet-contents">
-        <pre class="highlight"><code>var my_things = [2 + 5, 'самурай', true];
-my_things.forEach(function(item) {
-  alert(item);
-});</code></pre>
+          <a class="snippet-copy not-mobile not-tablet">
+            Копировать
+          </a>
+
+        </div>
 
       </div>
-
-      <a class="snippet-copy not-mobile not-tablet">
-        Копировать
-      </a>
-
     </div>
 
 
-  </div>
-</div>
 
-<!-- 35 -->
-<div id="step35" class="step">
-  <div class="content">
+    <div id="step29" class="step">
+      <div class="content">
 
-    <h2 class="gj"><div class="check">
-      <div class="check-circle"></div>
-      <svg class="check-svg" width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-          <polyline stroke="#65B280" stroke-width="4" points="11 19 18 26 29 14"></polyline>
-        </g>
-      </svg>
+        <h2 class="gj"><div class="check">
+          <div class="check-circle"></div>
+          <svg class="check-svg" width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+              <polyline stroke="#65B280" stroke-width="4" points="11 19 18 26 29 14"></polyline>
+            </g>
+          </svg>
+        </div>
+        Ясно!</h2>
+
+        <p>
+          Как только какое-то сравнение возвращает <code>true</code>, соответствующий ему код будет запущен, а все последующие утверждения будут проигнорированы. Вот почему появилось только одно окно.
+        </p>
+
+        <p>
+          Условные операторы используют <strong>ключевые слова</strong> <code>if</code> и <code>else</code>, а затем набор <strong>круглых скобок</strong>.
+        </p>
+
+        <p>
+          Комбинация ключевых слов и скобок также существует для другой <a onclick="showStep(30);">важной концепции программирования...</a>
+        </p>
+      </div>
     </div>
-  Лучше!</h2>
 
-  <p>
-    Обратите внимание на несколько улучшений:
-  </p>
 
-  <ul>
-    <li>
-      Нет переменной <code>i</code>.
-    </li>
-    <li>
-      Не нужно обращаться к <em>длине</em> массива.
-    </li>
-    <li>
-      Не нужно использовать <strong>индекс</strong> с <code>my_thing[i]</code> для доступа к элементу.
-    </li>
-  </ul>
 
-  <p>
-    Помните синтаксис функции <code>alert()</code>? Это был <code>alert(параметр)</code>.
-  </p>
+    <div id="step30" class="step">
+      <div class="content">
+        <h2>Циклы <span class="stamp is-concept">Концепция</span></h2>
 
-  <p>
-    Если вы внимательно посмотрите, вы увидите, что <code>forEach()</code> имеет тот же синтаксис! Это <code>forEach(параметр)</code>, но параметр является функцией, занимающей 3 строки.
-  </p>
+        <p>
+          Если вы хотите выполнить блок кода <em>определенное количество</em> раз, нужно использовать <strong>цикл</strong>.
+        </p>
 
-  <p>
-    До сих пор мы использовали несколько функций и методов:
-  </p>
+        <p>
+          Можете ли вы догадаться, сколько предупреждающих окон запускает этот фрагмент?
+        </p>
 
-  <ul>
-    <li>
-      функция <code>alert()</code> (она же — как метод <code>window</code>)
-    </li>
-    <li>
-      метод массива <code>push()</code>
-    </li>
-    <li>
-      метод массива <code>includes()</code>
-    </li>
-    <li>
-      метод массива <code>forEach()</code>
-    </li>
-  </ul>
+        <div class="snippet">
+          <div class="snippet-contents">
+            <pre class="highlight"><code>for (var i = 0; i &lt; 3; i++) {
+      alert(i);
+    }</code></pre>
+          </div>
 
-  <p>
-    Мы знаем, как <strong>вызвать</strong> функцию, но как её <a onclick="showStep(36);">создать</a>?
-  </p>
-</div>
-</div>
+          <a class="snippet-copy not-mobile not-tablet">
+            Копировать
+          </a>
 
-<!-- 36 -->
-<div id="step36" class="step">
-  <div class="content">
-    <h2>Создание функции <span class="stamp is-info">Инфо</span></h2>
+        </div>
 
-    <p>
-      Сила языков программирования заключается в возможности создавать свои <strong>собственные функции</strong>, которые соответствуют <em>вашим</em> потребностям.
-    </p>
+      </div>
+    </div>
 
-    <p>
-      Помните комбинацию ключевых слов и скобок, которую мы использовали для <code>if/else</code> и <code>for</code>? <em>Почти</em> такая же картина  и здесь!
-    </p>
 
-    <p>
-      Я говорю «почти», потому что единственная разница в том, что функции нужно <strong>имя</strong>!
-    </p>
 
-    <p>
-      Давайте <strong>создадим</strong> функцию с именем <code>greet()</code>, с <strong>1</strong> параметром под названием <code>name</code>, а затем сразу же вызовем ее:
-    </p>
+    <div id="step31" class="step">
+      <div class="content">
 
-    <div class="snippet">
-      <div class="snippet-contents">
-        <pre class="highlight"><code>function</span> greet(name) {
-  var message = 'Привет ' + name;
-  alert(message);
-}
-greet('Алекс');</code></pre>
+        <h2 class="gj"><div class="check">
+          <div class="check-circle"></div>
+          <svg class="check-svg" width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+              <polyline stroke="#65B280" stroke-width="4" points="11 19 18 26 29 14"></polyline>
+            </g>
+          </svg>
+        </div>
+        Это три!</h2>
+
+        <p>
+          Давайте проанализируем, что произошло:
+        </p>
+
+        <ul>
+          <li>
+            <code>var i = 0</code> — <strong>начальное состояние</strong> <br>
+            Прежде чем цикл начнется, переменной <code>i</code> присваивается значение <code>0</code>.
+          </li>
+          <li>
+            <code>i &lt; 3</code> является <strong>условным выражением</strong> <br>
+            На каждой итерации цикла мы проверяем это сравнение. <br>
+            Если это <code>true</code>, выполняем код в блоке. <br>
+            Если это <code>false</code>, выходим из цикла. <br>
+          </li>
+          <li>
+            <code>i++</code> — выражение <strong>увеличения</strong> <br>
+            Если выполнится блок кода, значение <code>i</code> увеличивается на 1.
+          </li>
+        </ul>
+
+        <p>
+          Вот как вы его реализовали:
+        </p>
+
+        <div class="stabs is-vertical">
+          <div class="stab">
+            <div class="stab-label">вы набрали <strong>слово</strong> <code>for</code></div>
+            <div class="stab-code"><code class="stabilo"><span class="is-purple">for</span> (var i = 0; i < 3; i++) {</code></div>
+          </div>
+          <div class="stab">
+            <div class="stab-label">вы открыли <strong>скобку</strong></div>
+            <div class="stab-code"><code class="stabilo">for <span class="is-black">(</span>var i = 0; i < 3; i++) {</code></div>
+          </div>
+          <div class="stab">
+            <div class="stab-label">вы указали <strong>начальное состояние</strong></div>
+            <div class="stab-code"><code class="stabilo">for (<span class="is-purple">var </span><span class="is-blue">i</span><span class="is-purple"> = </span><span class="is-red">0</span>; i < 3; i++) {</code></div>
+          </div>
+          <div class="stab">
+            <div class="stab-label">вы набрали <strong>точку с запятой</strong> чтобы отделить выражение</div>
+            <div class="stab-code"><code class="stabilo">for (var i = 0<span class="is-black">;</span> i < 3; i++) {</code></div>
+          </div>
+          <div class="stab">
+            <div class="stab-label">вы ввели <strong>проверку</strong></div>
+            <div class="stab-code"><code class="stabilo">for (var i = 0; <span class="is-blue">i</span><span class="is-purple"> < </span><span class="is-red">3</span>; i++) {</code></div>
+          </div>
+          <div class="stab">
+            <div class="stab-label">вы набрали <strong>точку с запятой</strong> чтобы отделить выражение</div>
+            <div class="stab-code"><code class="stabilo">for (var i = 0; i < 3<span class="is-black">;</span> i++) {</code></div>
+          </div>
+          <div class="stab">
+            <div class="stab-label">вы ввели выражение <strong>увеличения</strong></div>
+            <div class="stab-code"><code class="stabilo">for (var i = 0; i < 3; <span class="is-blue">i</span><span class="is-purple">++</span>) {</code></div>
+          </div>
+          <div class="stab">
+            <div class="stab-label">вы <strong>закрыли</strong> скобку</div>
+            <div class="stab-code"><code class="stabilo">for (var i = 0; i < 3; i++<span class="is-black">)</span> {</code></div>
+          </div>
+          <div class="stab">
+            <div class="stab-label">вы открыли <strong>фигурную скобку</strong></div>
+            <div class="stab-code"><code class="stabilo">for (var i = 0; i < 3; i++) <span class="is-black">{</span></code></div>
+          </div>
+          <div class="stab">
+            <div class="stab-label">вы ввели <strong>тело цикла</strong> (выполняется только если проверка дала <strong>true</strong>)</div>
+            <div class="stab-code"><code class="stabilo"><span class="is-blue">&nbsp;&nbsp;alert</span><span class="is-black">(</span><span class="is-blue">i</span><span class="is-black">);</span></code></div>
+          </div>
+          <div class="stab">
+            <div class="stab-label">вы <strong>закрыли</strong> фигурную скобку</div>
+            <div class="stab-code"><code class="stabilo"><span class="is-black">}</span></code></div>
+          </div>
+        </div>
+
+        <p>
+          Проанализируем каждую итерацию цикла:
+        </p>
+
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>Итерация</th>
+                <th>Значение <code>i</code></th>
+                <th>Test</th>
+                <th>Запустить?</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>0</td>
+                <td><code>0&nbsp;<&nbsp;3</code></td>
+                <td>Да</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>1</td>
+                <td><code>1&nbsp;<&nbsp;3</code></td>
+                <td>Да</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>2</td>
+                <td><code>2&nbsp;<&nbsp;3</code></td>
+                <td>Да</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>3</td>
+                <td><code>3&nbsp;<&nbsp;3</code></td>
+                <td><strong>Нет!</strong></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p>
+          Этот цикл позволил нам <strong>повторить</strong> действие N раз.
+        </p>
+
+        <p>
+          Есть один тип данных, для которого <a onclick="showStep(32);">циклы крайне важны...</a>
+        </p>
+      </div>
+    </div>
+
+
+
+    <div id="step32" class="step">
+      <div class="content">
+        <h2>Перебор массива <span class="stamp is-tool">Инструменты</span></h2>
+
+        <p>
+          Массивы и циклы буквально созданы друг для друга! Мы часто хотим повторить <strong>одно и то же действие</strong> для <em>каждого</em> элемента массива.
+        </p>
+
+        <p>
+          Предположим, мы хотим вызвать по отдельному окну сообщения для <em>каждого</em> элемента массива. Можно написать столько функций <code>alert()</code>, сколько есть элементов в массиве, но это решение громоздкое, неэффективное, подвержено ошибкам и плохо масштабируется (особенно с большими массивами).
+        </p>
+
+        <p>
+          Языки программирования существуют, чтобы упростить нашу работу. Давайте найдём лучший способ. Мы уже знаем некоторые вещи:
+        </p>
+
+        <ul>
+          <li>
+            как получить <strong>длину</strong> массива,
+          </li>
+          <li>
+            как получить доступ к элементу массива через <strong>индекс</strong>,
+          </li>
+          <li>
+            у нас есть доступ к переменной <code>i</code>, которая увеличивается на 1 при каждом прохождении цикла.
+          </li>
+        </ul>
+
+        <p>
+          Объединив эти данные, мы можем разработать следующий код:
+        </p>
+
+        <div class="snippet">
+          <div class="snippet-contents">
+            <pre class="highlight"><code>var my_things = [2 + 5, 'самурай', true];
+    for (var i = 0; i &lt; my_things.length; i++) {
+      alert(my_things[i]);
+    }</code></pre>
+
+          </div>
+
+          <a class="snippet-copy not-mobile not-tablet">
+            Копировать
+          </a>
+
+        </div>
+
+      </div>
+    </div>
+
+
+
+    <div id="step33" class="step">
+      <div class="content">
+
+        <h2 class="gj"><div class="check">
+          <div class="check-circle"></div>
+          <svg class="check-svg" width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+              <polyline stroke="#65B280" stroke-width="4" points="11 19 18 26 29 14"></polyline>
+            </g>
+          </svg>
+        </div>
+        По списку!</h2>
+
+        <p>
+          Один за другим элементы массива отображались в их собственных окнах сообщений.
+        </p>
+
+        <p>
+          Хотя такой цикл упрощает процесс работы с элементом массива, нам все равно пришлось создать блок <code>for</code> <strong>вручную</strong> и создать новую переменную <code>i</code>, чья единственная цель — увеличиваться после каждой итерации.
+        </p>
+
+        <p>
+          Я знаю, о чем вы думаете. «<em><a onclick="showStep(34);">Должен быть лучший способ</a></em>»
+        </p>
+      </div>
+    </div>
+
+
+
+    <div id="step34" class="step">
+      <div class="content">
+        <h2>forEach цикл <span class="stamp is-tool">Инструменты</span></h2>
+
+        <p>
+          У массивов на самом деле есть <strong>метод</strong> под названием <code>forEach()</code>, который позволяет выполнить действие отдельно для <em>каждого</em> элемента массива:
+        </p>
+
+        <div class="snippet">
+          <div class="snippet-contents">
+            <pre class="highlight"><code>var my_things = [2 + 5, 'самурай', true];
+    my_things.forEach(function(item) {
+      alert(item);
+    });</code></pre>
+
+          </div>
+
+          <a class="snippet-copy not-mobile not-tablet">
+            Копировать
+          </a>
+
+        </div>
+
+
+      </div>
+    </div>
+
+
+
+    <div id="step35" class="step">
+      <div class="content">
+
+        <h2 class="gj"><div class="check">
+          <div class="check-circle"></div>
+          <svg class="check-svg" width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+              <polyline stroke="#65B280" stroke-width="4" points="11 19 18 26 29 14"></polyline>
+            </g>
+          </svg>
+        </div>
+        Лучше!</h2>
+
+        <p>
+          Обратите внимание на несколько улучшений:
+        </p>
+
+        <ul>
+          <li>
+            Нет переменной <code>i</code>.
+          </li>
+          <li>
+            Не нужно обращаться к <em>длине</em> массива.
+          </li>
+          <li>
+            Не нужно использовать <strong>индекс</strong> с <code>my_thing[i]</code> для доступа к элементу.
+          </li>
+        </ul>
+
+        <p>
+          Помните синтаксис функции <code>alert()</code>? Это был <code>alert(параметр)</code>.
+        </p>
+
+        <p>
+          Если вы внимательно посмотрите, вы увидите, что <code>forEach()</code> имеет тот же синтаксис! Это <code>forEach(параметр)</code>, но параметр является функцией, занимающей 3 строки.
+        </p>
+
+        <p>
+          До сих пор мы использовали несколько функций и методов:
+        </p>
+
+        <ul>
+          <li>
+            функция <code>alert()</code> (она же — как метод <code>window</code>)
+          </li>
+          <li>
+            метод массива <code>push()</code>
+          </li>
+          <li>
+            метод массива <code>includes()</code>
+          </li>
+          <li>
+            метод массива <code>forEach()</code>
+          </li>
+        </ul>
+
+        <p>
+          Мы знаем, как <strong>вызвать</strong> функцию, но как её <a onclick="showStep(36);">создать</a>?
+        </p>
+      </div>
+    </div>
+
+
+
+    <div id="step36" class="step">
+      <div class="content">
+        <h2>Создание функции <span class="stamp is-info">Инфо</span></h2>
+
+        <p>
+          Сила языков программирования заключается в возможности создавать свои <strong>собственные функции</strong>, которые соответствуют <em>вашим</em> потребностям.
+        </p>
+
+        <p>
+          Помните комбинацию ключевых слов и скобок, которую мы использовали для <code>if/else</code> и <code>for</code>? <em>Почти</em> такая же картина  и здесь!
+        </p>
+
+        <p>
+          Я говорю «почти», потому что единственная разница в том, что функции нужно <strong>имя</strong>!
+        </p>
+
+        <p>
+          Давайте <strong>создадим</strong> функцию с именем <code>greet()</code>, с <strong>1</strong> параметром под названием <code>name</code>, а затем сразу же вызовем ее:
+        </p>
+
+        <div class="snippet">
+          <div class="snippet-contents">
+            <pre class="highlight"><code>function</span> greet(name) {
+      var message = 'Привет ' + name;
+      alert(message);
+    }
+    greet('Алекс');</code></pre>
+          </div>
+
+          <a class="snippet-copy not-mobile not-tablet">
+            Копировать
+          </a>
+
+        </div>
+
+      </div>
+    </div>
+
+
+
+    <div id="step37" class="step">
+      <div class="content">
+
+        <h2 class="gj"><div class="check">
+          <div class="check-circle"></div>
+          <svg class="check-svg" width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+              <polyline stroke="#65B280" stroke-width="4" points="11 19 18 26 29 14"></polyline>
+            </g>
+          </svg>
+        </div>
+        Приветствую!</h2>
+
+        <p>
+          Вы создали свою первую функцию! Это просто, но это может вас многому научить.
+        </p>
+
+        <p>
+          Обратите внимание на несколько вещей:
+        </p>
+
+        <ul>
+          <li>
+            <strong>имя</strong> функции <code>greet</code>,
+          </li>
+          <li>
+            <strong>параметр</strong> <code>name</code>: он похож на переменную, поскольку действует как контейнер для значения, которое функция ожидает при вызове,
+          </li>
+          <li>
+            мы создали <strong>переменную</strong> <code>message</code>, значение которой <code>'Привет ' + name</code>,
+          </li>
+          <li>
+            этот знак <strong>плюс</strong> <code>+</code> <strong>объединяет</strong> (комбинирует) две строки, чтобы сделать из них одну,
+          </li>
+          <li>
+            мы <strong>вызываем</strong> функцию <code>alert()</code> и используем переменную <code>message</code> в качестве параметра,
+          </li>
+          <li>
+            после создания функции мы вызываем её с параметром <code>'Алекс'</code>.
+          </li>
+        </ul>
+
+        <p>
+          Если разбить его шаг за шагом:
+        </p>
+
+        <div class="stabs is-vertical">
+          <div class="stab">
+            <div class="stab-label">вы ввели <strong>ключевое</strong> слово <code>function</code></div>
+            <div class="stab-code"><code class="stabilo"><span class="is-purple">function</span> greet(name) {</code></div>
+          </div>
+          <div class="stab">
+            <div class="stab-label">вы ввели <strong>имя</strong> функции</div>
+            <div class="stab-code"><code class="stabilo">function <span class="is-blue">greet</span>(name) {</code></div>
+          </div>
+          <div class="stab">
+            <div class="stab-label">вы открылы <strong>скобку</strong></div>
+            <div class="stab-code"><code class="stabilo">function greet<span class="is-black">(</span>name) {</code></div>
+          </div>
+          <div class="stab">
+            <div class="stab-label">вы создали <strong>параметр</strong> с именем <code>name</code></div>
+            <div class="stab-code"><code class="stabilo">function greet(<span class="is-blue">name</span>) {</code></div>
+          </div>
+          <div class="stab">
+            <div class="stab-label">вы <strong>закрыли</strong> скобку</div>
+            <div class="stab-code"><code class="stabilo">function greet(name<span class="is-black">)</span> {</code></div>
+          </div>
+          <div class="stab">
+            <div class="stab-label">вы открыли <strong>фигурную скобку</strong></div>
+            <div class="stab-code"><code class="stabilo">function greet(name) <span class="is-black">{</span></code></div>
+          </div>
+          <div class="stab">
+            <div class="stab-label">вы ввели <strong>код</strong> который выполняется только при <strong>вызове</strong> функции</div>
+            <div class="stab-code"><code class="stabilo">&nbsp;&nbsp;<span class="is-purple">var<span class="is-blue"> message </span><span class="is-purple">= </span><span class="is-green">'Привет '</span><span class="is-purple"> +</span><span class="is-blue"> name</span><span class="is-black">;</span></code><br><code class="stabilo">&nbsp;&nbsp;<span class="is-blue">alert</span><span class="is-black">(</span><span class="is-blue">message</span><span class="is-black">);</span></code></div>
+          </div>
+          <div class="stab">
+            <div class="stab-label">вы <strong>закрыли</strong> фигурную скобку</div>
+            <div class="stab-code"><code class="stabilo"><span class="is-black">}</span></code></div>
+          </div>
+          <div class="stab">
+            <div class="stab-label">вы <strong>вызвали</strong> функцию со строкой в качестве параметра</div>
+            <div class="stab-code"><code class="stabilo"><span class="is-blue">greet</span><span class="is-black">(</span><span class="is-green">'Alex'</span><span class="is-black">)</span><span class="is-black">;</span></code></div>
+          </div>
+        </div>
+
+        <p>
+          Если мы не вызовем функцию <code>greet()</code>, ничего не произойдет. Это потому, что вызов <code>alert()</code> находится <em>внутри</em> области действия <code>greet()</code>, поэтому он не запускается, пока не будет вызвана сама родительская функция <code>greet()</code>.
+        </p>
+
+        <p>
+          <strong>Создавая</strong> <code>greet()</code>, вы сообщаете браузеру: «<em>Эй, я создал эту новую функцию. Поэтому, если в какой-то момент я ее вызову, выполни всё, что внутри!</em>».
+        </p>
+
+        <p>
+          Вот почему, когда вы <strong>вызываете</strong> <code>greet()</code>, браузер выполняет код, который вызывает <code>alert()</code>.
+        </p>
+
+        <p>
+          Важно понимать, что функции работают <strong>в два этапа</strong>: сначала создание, затем вызов.
+        </p>
+
+        <p>
+          На самом деле, функция <code>alert()</code>, которую мы использовали всё это время, была создана заранее. Она просто существует где-то внутри вашего браузера.
+        </p>
+
+        <p>
+          В любом случае, мы уже <em>многое</em> обсудили за 14 минут! Итак, <a onclick="showStep(38);">что же будет дальше</a>?
+        </p>
+      </div>
+    </div>
+
+
+
+    <div id="step38" class="step">
+      <div class="content">
+        <h2>Что дальше <span class="stamp is-victory">Победа!</span></h2>
+
+        <h3>Изучите JavaScript</h3>
+
+        <p>
+          Здесь мы едва ограничились основами. Но не волнуйтесь! Есть <em>много</em> ресурсов, доступных в Интернете!
+        </p>
+
+        <p>
+          Вот несколько <strong>бесплатных</strong> ресурсов, которые можно рекомендовать:
+        </p>
+
+        <ul>
+          <li>
+            <a href="https://learn.javascript.ru/">Современный учебник Javascript</a>
+          </li>
+          <li>
+            <a href="https://developer.mozilla.org/ru/docs/Learn/JavaScript">Mozilla Developer Network</a>
+          </li>
+          <li>
+            <a href="https://github.com/azat-io/you-dont-know-js-ru">Серия книг «Вы не знаете JS»</a>
+          </li>
+        </ul>
+
+        <h3>Изучите HTML и CSS</h3>
+
+        <p>
+          JavaScript-это только треть того, что делает веб-страницу! Вам также нужно знать <strong>HTML</strong> и <strong>CSS</strong>.
+        </p>
+
+        <p>
+          Джереми Томас (автор оригинального материала) даёт две ссылки: <a href="https://htmlreference.io">HTML Reference</a> и <a href="https://cssreference.io">CSS Reference</a>, но материалы на этих проектах, видимо, не очень активно обновляются, так что лучше пользуйтесь <a href="https://webref.ru/">webref.ru</a> (прим. Н. Громов).
+        </p>
+
+        <h3>CSS-фреймворк Джереми</h3>
+
+        <p>
+          Джереми Томас разработал эту страницу на <strong>Bulma</strong>, бесплатном CSS-фреймворке на основе Flexbox. <a href="https://bulma.io">Проверьте это!</a>
+        </p>
+
+        <p class="focus">
+          <a class="share is-bulma" href="https://bulma.io/">
+            <img
+            src="images/bulma-modern-css-framework-flexbox.png"
+            alt="Bulma CSS framework based on Flexbox"
+            width="256"
+            height="160">
+          </a>
+        </p>
+
+      </div>
+    </div>
+
+    <aside id="sides" class="sides">
+      <div id="sideConcepts" class="side">
+        <div class="side-title">
+          <span class="stamp is-concept">Концепции</span>
+        </div>
+        <div id="sideFunctions" class="side-item">
+          <span class="side-word is-concept">Функции</span>
+        </div>
+        <div id="sideVariables" class="side-item">
+          <span class="side-word is-concept">Переменные</span>
+        </div>
+        <div id="sideConditionals" class="side-item">
+          <span class="side-word is-concept">Условия</span>
+        </div>
+        <div id="sideLoops" class="side-item">
+          <span class="side-word is-concept">Циклы</span>
+        </div>
       </div>
 
-      <a class="snippet-copy not-mobile not-tablet">
-        Копировать
-      </a>
-
-    </div>
-
-  </div>
-</div>
-
-<!-- 37 -->
-<div id="step37" class="step">
-  <div class="content">
-
-    <h2 class="gj"><div class="check">
-      <div class="check-circle"></div>
-      <svg class="check-svg" width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-          <polyline stroke="#65B280" stroke-width="4" points="11 19 18 26 29 14"></polyline>
-        </g>
-      </svg>
-    </div>
-  Приветствую!</h2>
-
-  <p>
-    Вы создали свою первую функцию! Это просто, но это может вас многому научить.
-  </p>
-
-  <p>
-    Обратите внимание на несколько вещей:
-  </p>
-
-  <ul>
-    <li>
-      <strong>имя</strong> функции <code>greet</code>,
-    </li>
-    <li>
-      <strong>параметр</strong> <code>name</code>: он похож на переменную, поскольку действует как контейнер для значения, которое функция ожидает при вызове,
-    </li>
-    <li>
-      мы создали <strong>переменную</strong> <code>message</code>, значение которой <code>'Привет ' + name</code>,
-    </li>
-    <li>
-      этот знак <strong>плюс</strong> <code>+</code> <strong>объединяет</strong> (комбинирует) две строки, чтобы сделать из них одну,
-    </li>
-    <li>
-      мы <strong>вызываем</strong> функцию <code>alert()</code> и используем переменную <code>message</code> в качестве параметра,
-    </li>
-    <li>
-      после создания функции мы вызываем её с параметром <code>'Алекс'</code>.
-    </li>
-  </ul>
-
-  <p>
-    Если разбить его шаг за шагом:
-  </p>
-
-  <div class="stabs is-vertical">
-    <div class="stab">
-      <div class="stab-label">вы ввели <strong>ключевое</strong> слово <code>function</code></div>
-      <div class="stab-code"><code class="stabilo"><span class="is-purple">function</span> greet(name) {</code></div>
-    </div>
-    <div class="stab">
-      <div class="stab-label">вы ввели <strong>имя</strong> функции</div>
-      <div class="stab-code"><code class="stabilo">function <span class="is-blue">greet</span>(name) {</code></div>
-    </div>
-    <div class="stab">
-      <div class="stab-label">вы открылы <strong>скобку</strong></div>
-      <div class="stab-code"><code class="stabilo">function greet<span class="is-black">(</span>name) {</code></div>
-    </div>
-    <div class="stab">
-      <div class="stab-label">вы создали <strong>параметр</strong> с именем <code>name</code></div>
-      <div class="stab-code"><code class="stabilo">function greet(<span class="is-blue">name</span>) {</code></div>
-    </div>
-    <div class="stab">
-      <div class="stab-label">вы <strong>закрыли</strong> скобку</div>
-      <div class="stab-code"><code class="stabilo">function greet(name<span class="is-black">)</span> {</code></div>
-    </div>
-    <div class="stab">
-      <div class="stab-label">вы открыли <strong>фигурную скобку</strong></div>
-      <div class="stab-code"><code class="stabilo">function greet(name) <span class="is-black">{</span></code></div>
-    </div>
-    <div class="stab">
-      <div class="stab-label">вы ввели <strong>код</strong> который выполняется только при <strong>вызове</strong> функции</div>
-      <div class="stab-code"><code class="stabilo">&nbsp;&nbsp;<span class="is-purple">var<span class="is-blue"> message </span><span class="is-purple">= </span><span class="is-green">'Привет '</span><span class="is-purple"> +</span><span class="is-blue"> name</span><span class="is-black">;</span></code><br><code class="stabilo">&nbsp;&nbsp;<span class="is-blue">alert</span><span class="is-black">(</span><span class="is-blue">message</span><span class="is-black">);</span></code></div>
-    </div>
-    <div class="stab">
-      <div class="stab-label">вы <strong>закрыли</strong> фигурную скобку</div>
-      <div class="stab-code"><code class="stabilo"><span class="is-black">}</span></code></div>
-    </div>
-    <div class="stab">
-      <div class="stab-label">вы <strong>вызвали</strong> функцию со строкой в качестве параметра</div>
-      <div class="stab-code"><code class="stabilo"><span class="is-blue">greet</span><span class="is-black">(</span><span class="is-green">'Alex'</span><span class="is-black">)</span><span class="is-black">;</span></code></div>
-    </div>
-  </div>
-
-  <p>
-    Если мы не вызовем функцию <code>greet()</code>, ничего не произойдет. Это потому, что вызов <code>alert()</code> находится <em>внутри</em> области действия <code>greet()</code>, поэтому он не запускается, пока не будет вызвана сама родительская функция <code>greet()</code>.
-  </p>
-
-  <p>
-    <strong>Создавая</strong> <code>greet()</code>, вы сообщаете браузеру: «<em>Эй, я создал эту новую функцию. Поэтому, если в какой-то момент я ее вызову, выполни всё, что внутри!</em>».
-  </p>
-
-  <p>
-    Вот почему, когда вы <strong>вызываете</strong> <code>greet()</code>, браузер выполняет код, который вызывает <code>alert()</code>.
-  </p>
-
-  <p>
-    Важно понимать, что функции работают <strong>в два этапа</strong>: сначала создание, затем вызов.
-  </p>
-
-  <p>
-    На самом деле, функция <code>alert()</code>, которую мы использовали всё это время, была создана заранее. Она просто существует где-то внутри вашего браузера.
-  </p>
-
-  <p>
-    В любом случае, мы уже <em>многое</em> обсудили за 14 минут! Итак, <a onclick="showStep(38);">что же будет дальше</a>?
-  </p>
-</div>
-</div>
-
-<!-- 38 -->
-<div id="step38" class="step">
-  <div class="content">
-    <h2>Что дальше <span class="stamp is-victory">Победа!</span></h2>
-
-    <h3>Изучите JavaScript</h3>
-
-    <p>
-      Здесь мы едва ограничились основами. Но не волнуйтесь! Есть <em>много</em> ресурсов, доступных в Интернете!
-    </p>
-
-    <p>
-      Вот несколько <strong>бесплатных</strong> ресурсов, которые можно рекомендовать:
-    </p>
-
-    <ul>
-      <li>
-        <a href="https://learn.javascript.ru/">Современный учебник Javascript</a>
-      </li>
-      <li>
-        <a href="https://developer.mozilla.org/ru/docs/Learn/JavaScript">Mozilla Developer Network</a>
-      </li>
-      <li>
-        <a href="https://github.com/azat-io/you-dont-know-js-ru">Серия книг «Вы не знаете JS»</a>
-      </li>
-    </ul>
-
-    <h3>Изучите HTML и CSS</h3>
-
-    <p>
-      JavaScript-это только треть того, что делает веб-страницу! Вам также нужно знать <strong>HTML</strong> и <strong>CSS</strong>.
-    </p>
-
-    <p>
-      Джереми Томас (автор оригинального материала) даёт две ссылки: <a href="https://htmlreference.io">HTML Reference</a> и <a href="https://cssreference.io">CSS Reference</a>, но материалы на этих проектах, видимо, не очень активно обновляются, так что лучше пользуйтесь <a href="https://webref.ru/">webref.ru</a> (прим. Н. Громов).
-    </p>
-
-<h3>CSS-фреймворк Джереми</h3>
-
-<p>
-  Джереми Томас разработал эту страницу на <strong>Bulma</strong>, бесплатном CSS-фреймворке на основе Flexbox. <a href="https://bulma.io">Проверьте это!</a>
-</p>
-
-<p class="focus">
-  <a class="share is-bulma" href="https://bulma.io/">
-    <img
-    src="images/bulma-modern-css-framework-flexbox.png"
-    alt="Bulma CSS framework based on Flexbox"
-    width="256"
-    height="160">
-  </a>
-</p>
-
-</div>
-</div>
-
-<aside id="sides" class="sides">
-  <div id="sideConcepts" class="side">
-    <div class="side-title">
-      <span class="stamp is-concept">Концепции</span>
-    </div>
-    <div id="sideFunctions" class="side-item">
-      <span class="side-word is-concept">Функции</span>
-    </div>
-    <div id="sideVariables" class="side-item">
-      <span class="side-word is-concept">Переменные</span>
-    </div>
-    <div id="sideConditionals" class="side-item">
-      <span class="side-word is-concept">Условия</span>
-    </div>
-    <div id="sideLoops" class="side-item">
-      <span class="side-word is-concept">Циклы</span>
-    </div>
-  </div>
-
-  <div id="sideTypes" class="side">
-    <div class="side-title">
-      <span class="stamp is-type">Типы</span>
-    </div>
-    <div id="sideStrings" class="side-item">
-      <span class="side-word is-type">Строки</span>
-    </div>
-    <div id="sideNumbers" class="side-item">
-      <span class="side-word is-type">Числа</span>
-    </div>
-    <div id="sideObjects" class="side-item">
-      <span class="side-word is-type">Объекты</span>
-    </div>
-    <div id="sideArrays" class="side-item">
-      <span class="side-word is-type">Массивы</span>
-    </div>
-    <div id="sideBooleans" class="side-item">
-      <span class="side-word is-type">Логические</span>
-    </div>
-  </div>
-</aside>
+      <div id="sideTypes" class="side">
+        <div class="side-title">
+          <span class="stamp is-type">Типы</span>
+        </div>
+        <div id="sideStrings" class="side-item">
+          <span class="side-word is-type">Строки</span>
+        </div>
+        <div id="sideNumbers" class="side-item">
+          <span class="side-word is-type">Числа</span>
+        </div>
+        <div id="sideObjects" class="side-item">
+          <span class="side-word is-type">Объекты</span>
+        </div>
+        <div id="sideArrays" class="side-item">
+          <span class="side-word is-type">Массивы</span>
+        </div>
+        <div id="sideBooleans" class="side-item">
+          <span class="side-word is-type">Логические</span>
+        </div>
+      </div>
+    </aside>
 
 </main>
 <script src="vendor/bowser-1.9.3.min.js"></script>
